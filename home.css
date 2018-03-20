@@ -1,0 +1,65 @@
+/* UNIVERSAL SELECTORS */
+#borderless-container {
+	width: 90vw;
+    min-width: 800px;
+	padding: 0 5vw 0 5vw;
+    margin: 0;
+}
+
+h1 {
+    font-size: 30px;
+    font-family: 'Arial', sans-serif;
+    line-height: 35px;
+    text-align: left;
+}
+
+.block-item {
+    padding-top: 20px;
+}
+
+/* HEADER SELECTORS */
+#header {
+    height: 300px;
+    width: 100%;
+    background-color: lemonchiffon;
+}
+
+/* CAROUSEL SELECTORS */
+#overview-carousel {
+    height: 500px;
+    width: 100%;
+    padding-top: 20px;
+    background-color: aqua;
+}
+
+.slide:not(#slide-1) {
+    display: none;
+}
+
+.slide-img {
+    height: 300px;
+    width: 400px;
+    float: left;
+    margin-right: 40px;
+}
+
+.slide-body {
+    background-color: green;
+    margin-right: 30%;
+    /*width: 300px;*/
+}
+
+.slide-adv-btn {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active-dot, .slide-adv-btn:hover {
+  background-color: #717171;
+}

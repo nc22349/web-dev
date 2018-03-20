@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>ATX Grad Photos</title>
+        <link rel="stylesheet" href="./home.css">
+        <script src="carousel.js" defer></script>
+    </head>
+    <body>
+        <div id="header"></div>
+        <div id="borderless-container"> <!-- Everything below header -->
+            <section class="block-item"> <!-- Each page section -->
+                <div id="overview-carousel">
+                    <div id="slideshow-container">
+                        <div class="slide" id="slide-1">
+                            <img class="slide-img" src="DSC_0122.jpg" alt="img"></img>
+                            <div class="slide-body" id="slide-1">
+                                <h1>Get Portraits You Will Love From Photographers Near You</h1>
+                            </div>
+                        </div>
+                        <div class="slide" id="slide-2">
+                            <img class="slide-img" src="DSC_0181.jpg" alt="img"></img>
+                            <div class="slide-body">
+                                <h1>View Profiles of Photographers You Like</h1>
+                            </div>
+                        </div>
+                        <div class="slide" id="slide-3">
+                            <img class="slide-img" src="IMG_0255.jpg" alt="img"></img>
+                            <div class="slide-body">
+                                <h1>Contact the Ones You Want</h1>
+                             </div>
+                        </div>
+                        <div id="slide-adv-btns">
+                            <span class="slide-adv-btn active-dot" onclick="showSelectedSlide(this.id)"></span>
+                            <span class="slide-adv-btn" onclick="showSelectedSlide(this.id)"></span> 
+                            <span class="slide-adv-btn" onclick="showSelectedSlide(this.id)"></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>
