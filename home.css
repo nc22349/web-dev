@@ -93,9 +93,8 @@ input[name='Browse'] {
 
 /* CAROUSEL SELECTORS */
 #overview-carousel {
-    height: 200px;
+    height: 300px;
     width: 100%;
-    background-color: aqua;
 }
 
 .slide:not(#slide-1) {
@@ -110,7 +109,6 @@ input[name='Browse'] {
 }
 
 .slide-body {
-    background-color: green;
     margin-right: 30%;
     /*width: 300px;*/
 }
