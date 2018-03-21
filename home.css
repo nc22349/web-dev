@@ -95,6 +95,7 @@ input[name='Browse'] {
 #overview-carousel {
     height: 300px;
     width: 100%;
+    position: relative;
 }
 
 .slide:not(#slide-1) {
@@ -111,6 +112,12 @@ input[name='Browse'] {
 .slide-body {
     margin-right: 30%;
     /*width: 300px;*/
+}
+
+#slide-adv-btns {
+    position: absolute;
+    top: 130px;
+    left: 440px;
 }
 
 .slide-adv-btn {
