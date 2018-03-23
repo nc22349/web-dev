@@ -17,6 +17,14 @@
     margin-bottom: 20px;
 }
 
+a:link, a:visited {
+    text-decoration: none;
+}
+
+a.orange:link, a.orange:visited {
+    color: #cc5500;
+}
+
 /* HEADER SELECTORS */
 #header {
   width: 100%;
@@ -276,14 +284,6 @@ img[alt='whitespace2'] {
   margin-right: auto;
   padding-right: 95px;
   padding-top: 0px;
-}
-
-a:link, a:visited {
-    text-decoration: none;
-}
-
-a.orange:link, a.orange:visited {
-    color: #cc5500;
 }
 
 /* FOOTER SELECTORS */
