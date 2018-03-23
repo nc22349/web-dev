@@ -52,6 +52,14 @@ img[alt='Camera Clip Art'] {
   width: 350px;
   height: 300px;
 }
+
+img[alt='ATXGRADPHOTO'] {
+  position: absolute;
+  top: 0px;
+  width: 150px;
+  height: 100px;
+}
+
 input[name=Register] {
    width: 140px;
    background-color: #cc5500;

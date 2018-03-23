@@ -41,6 +41,7 @@ img[alt='Facebook'] {
   height:35px;
   padding-right: 5px;
   padding-top: 5px;
+  border-radius: 10px;
 }
 
 img[alt='Instagram'] {
@@ -48,6 +49,7 @@ img[alt='Instagram'] {
   height: 35px;
   padding-right: 5px;
   padding-top: 5px;
+  border-radius: 10px;
 }
 
 img[alt='Twitter'] {
@@ -55,6 +57,7 @@ img[alt='Twitter'] {
   height: 35px;
   padding-right: 5px;
   padding-top: 5px;
+  border-radius: 10px;
 }
 
 img[alt='LinkedIn'] {
@@ -62,6 +65,7 @@ img[alt='LinkedIn'] {
   height: 35px;
   padding-right: 5px;
   padding-top: 5px;
+  border-radius: 10px;
 }
 
 img[alt='LinkedIn2'] {
@@ -69,6 +73,7 @@ img[alt='LinkedIn2'] {
   height: 35px;
   padding-right: 5px;
   padding-top: 5px;
+  border-radius: 10px;
 }
 
 img[alt='Course Index Page'] {
@@ -76,6 +81,7 @@ img[alt='Course Index Page'] {
   height: 35px;
   padding-right: 5px;
   padding-top: 5px;
+  border-radius: 10px;
 }
 
 img[alt='Zee Hussain'] {
@@ -88,4 +94,12 @@ img[alt='Nathan Caldwell'] {
   position: absolute;
   top: 225px;
   left: 200px;
+}
+
+img[alt='ATXGRADPHOTO'] {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 150px;
+  height: 100px;
 }
