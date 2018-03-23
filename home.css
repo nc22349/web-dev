@@ -282,3 +282,18 @@ a,a:link, a:visited {
     text-decoration: none;
     color: #cc5500;
 }
+
+/* FOOTER SELECTORS */
+footer {
+    background-color: #e6e6e6;
+    height: 200px;
+    width: 100%;
+    margin-top: 250px;
+    position: relative;
+}
+
+#logo-bottom {
+    background-color: orange;
+    position: absolute;
+    margin: 20px 0 15px 10px;
+}
