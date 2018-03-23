@@ -1,4 +1,7 @@
 /* UNIVERSAL SELECTORS */
+body {
+    font-family: 'Arial', sans-serif;
+}
 #borderless-container {
 	width: 90vw;
     min-width: 800px;
@@ -304,7 +307,6 @@ footer {
 
 #logo-bottom > img {
     position: static;
-    
 }
 
 #bar {
@@ -318,10 +320,8 @@ footer {
 }
 
 table {
-    background-color: blue;
     width: 70%;
     margin: 20px auto 0 auto;
-    display: table-row;
 }
 
 .footer-link {
