@@ -1,0 +1,91 @@
+
+h1{
+	vertical-align: center;
+	text-align:center;
+	font-size: 45px;
+	line-height: 35px;
+}
+
+body {
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-top: 45px;
+	padding-top: 20px;
+	background-color:#fff5e6;
+	color: #262626;
+	font-family: 'Arial', 'Comic Sans', sans-serif;
+}
+
+hr{
+	border-color: #cc5500;
+}
+
+#Zee_info {
+	max-width: 350px;
+	text-align: left;
+	position: absolute;
+	right:200px;
+	top: 475px;
+}
+
+#Nathan_info {
+	max-width: 350px;
+	text-align: left;
+	position: absolute;
+	left:200px;
+	top: 475px;
+}
+
+img[alt='Facebook'] {
+  width: 25px;
+  height:35px;
+  padding-right: 5px;
+  padding-top: 5px;
+}
+
+img[alt='Instagram'] {
+  width: 25px;
+  height: 35px;
+  padding-right: 5px;
+  padding-top: 5px;
+}
+
+img[alt='Twitter'] {
+  width: 25px;
+  height: 35px;
+  padding-right: 5px;
+  padding-top: 5px;
+}
+
+img[alt='LinkedIn'] {
+  width: 25px;
+  height: 35px;
+  padding-right: 5px;
+  padding-top: 5px;
+}
+
+img[alt='LinkedIn2'] {
+  width: 25px;
+  height: 35px;
+  padding-right: 5px;
+  padding-top: 5px;
+}
+
+img[alt='Course Index Page'] {
+  width: 25px;
+  height: 35px;
+  padding-right: 5px;
+  padding-top: 5px;
+}
+
+img[alt='Zee Hussain'] {
+  position: absolute;
+  top: 225px;
+  right: 200px;
+}
+
+img[alt='Nathan Caldwell'] {
+  position: absolute;
+  top: 225px;
+  left: 200px;
+}
