@@ -1,0 +1,41 @@
+h1 {
+    text-align: center;
+}
+
+#grid-wrapper {
+    text-align: center;
+}
+
+#btns-wrapper {
+    margin-top: 20px;
+    width: 400px; /* Match grid width */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#time-display-wrapper {
+    height: 50px;
+    width: 200px;
+    margin: 0;
+    float: left;
+    text-align: center;
+}
+
+label[for="time-taken"] {
+    display: block;
+    font-style: italic;
+}
+
+input#time-taken {
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#done-btn-wrapper {
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin-left: 200px;
+}
