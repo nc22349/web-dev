@@ -39,3 +39,7 @@ input#time-taken {
     text-align: center;
     margin-left: 200px;
 }
+
+#imgs-wrapper {
+    margin: 30px 5vw 0 5vw;
+}
