@@ -3,21 +3,24 @@
     <head>
         <title>Jigsaw Puzzle</title>
         <meta charset="UTF-8">
+        <script type="text/javascript" src="fixPosition.js" defer></script>
         <script type = "text/javascript" src="hwk11-dragger.js" defer></script>
         <script type = "text/javascript" src="hwk11.js" defer></script>
         <link rel="stylesheet" type="text/css" href="jigsawPuzzle.css">
     </head>
     <body>
         <h1>Jigsaw Puzzle</h1>
-        <div id="grid-wrapper"><img id="grid" src="./puzzleback.gif" alt="grid"></div>
-        <div id="btns-wrapper">
-            <div id="btns-container">
-                <div id="time-display-wrapper">
-                    <label for="time-taken">Time Taken</label>
-                    <input type="text" id="time-taken" name="time-taken">
-                </div>
-                <div id="done-btn-wrapper">
-                    <button id="done-btn" type="button">Done</button>
+        <div id="canvas">
+            <div id="grid-wrapper"><img id="grid" src="./puzzleback.gif" alt="grid"></div>
+            <div id="btns-wrapper">
+                <div id="btns-container">
+                    <div id="time-display-wrapper">
+                        <label for="time-taken">Time Taken</label>
+                        <input type="text" id="time-taken" name="time-taken">
+                    </div>
+                    <div id="done-btn-wrapper">
+                        <button id="done-btn" type="button">Done</button>
+                    </div>
                 </div>
             </div>
         </div>

@@ -46,4 +46,6 @@ input#time-taken {
 
 #imgs-wrapper {
     margin: 30px 5vw 0 5vw;
+    width: 90vw;
+    min-height: 250px;
 }
