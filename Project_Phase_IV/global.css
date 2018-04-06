@@ -28,6 +28,8 @@
   opacity: 1;
 }
 
+
+/* Set max width for whole container, so doesn't grow infinitely. To use, do this in HTML: <div class="container setmax"> */
 .container.setmax {
     max-width: 720px;
 }
