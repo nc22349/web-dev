@@ -40,5 +40,6 @@
                 <button class="btn btn-primary btn-lg" type="submit">Submit</button>
             </form>
         </div>
+        <?php include "./footer.html"; ?>
     </body>
 </html>

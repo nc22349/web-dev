@@ -33,3 +33,15 @@
 .container.setmax {
     max-width: 720px;
 }
+
+/* FOOTER */
+.global-footer {
+  padding: 2.5rem 0;
+  color: white;
+  text-align: center;
+  background-color: #ff6a00;
+  border-top: .05rem solid #aaa;
+}
+.global-footer p:last-child {
+  margin-bottom: 0;
+}
