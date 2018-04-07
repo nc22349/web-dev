@@ -37,7 +37,7 @@
                     <textarea class="textarea" id="comments" placeholder="Your comments/question here..."></textarea>
                 </div>
                 <hr class="mb-4">
-                <button class="btn btn-primary btn-lg" type="submit">Submit</button>
+                <button class="btn btn-lg burnt-orange" type="submit">Submit</button>
             </form>
         </div>
         <?php include "./../footer.html"; ?>
