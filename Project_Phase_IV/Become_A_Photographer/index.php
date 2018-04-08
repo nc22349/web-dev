@@ -1,12 +1,9 @@
-<!-- CONTACT US index.html -->
+<!-- BECOME A PHOTOGRAPHER index.php -->
 
 <html>
     <head>
-        <title>Contact Us</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="../global.css">
+        <title>Become a Photographer</title>
+	<?php include "../head-content.html"; ?>
     </head>
     <body>
         <div class="container setmax">
@@ -40,6 +37,7 @@
                 <hr class="mb-4">
                 <button class="btn btn-lg burnt-orange" type="submit">Register</button>
             </form>
-        </div>ftyrtdsfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+        </div>
+	<?php include "../footer.html"; ?>
     </body>
 </html>
