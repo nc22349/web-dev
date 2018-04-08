@@ -38,30 +38,18 @@
 footer {
     background-color: #ff6a00;
     color: white;
-    width: 100%;
     margin-top: 100px;
 }
 #logo-bottom {
-    margin: 20px 0 15px 10px;
     width: 100px;
     height: 100px;
 }
-#bar {
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
-    height: 2px;
-    background-color: white;
-    top: 100px;
-    border-radius: 1px;
-}
-table {
-    width: 70%;
-    margin: 20px auto 0 auto;
-    padding-bottom: 30px;
-}
 .footer-link {
     color: white;
+}
+.footer-link:hover {
+    color: hotpink;
+    font-style: underline;
 }
 
 /* BUTTONS */
