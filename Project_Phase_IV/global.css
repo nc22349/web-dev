@@ -48,8 +48,11 @@ footer {
     color: white;
 }
 .footer-link:hover {
-    color: hotpink;
+    color: white;
     font-style: underline;
+}
+.footer-link:visited {
+    color: #eee;
 }
 
 /* BUTTONS */
