@@ -30,6 +30,15 @@ a.orange:link, a.orange:visited {
   background-color:#e6e6e6;
 }
 
+#header.shrink {
+  height: 40px;
+  transition: all ease .5s;
+}
+
+#header.shrink #logo {
+  padding: 10px;
+  transition: all ease .5s;
+}
 #register_buttons{
   position: absolute;
   top: 5px;
