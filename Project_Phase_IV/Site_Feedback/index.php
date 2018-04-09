@@ -6,6 +6,7 @@
         <?php include "../head-content.html"; ?>
     </head>
     <body>
+        <?php include "../header.html"; ?>
         <div class="container setmax">
             <div class="py-5 text-center">
                 <h2>Site Feedback</h2>

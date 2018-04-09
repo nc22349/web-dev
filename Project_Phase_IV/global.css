@@ -1,5 +1,20 @@
 /* GLOBAL CSS */
 
+/* Use anytime you want something burnt-orange */
+.burnt-orange {
+    background-color: #cc5500;
+    color: white;
+}
+.burnt-orange a, .burnt-orange a:hover, .burnt-orange a:visited {
+    color: white;
+}
+
+/* Header */
+#logo-navbar-collapsed {
+    height: 50px;
+    width: 50px;
+}
+
 /* <textarea> elements */
 .textarea {
   display: block;
@@ -53,10 +68,4 @@ footer {
 }
 .footer-link:visited {
     color: #eee;
-}
-
-/* BUTTONS */
-.burnt-orange {
-    background-color: #cc5500;
-    color: white;
 }

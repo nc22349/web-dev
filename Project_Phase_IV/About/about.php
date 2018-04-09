@@ -7,6 +7,7 @@
 	</head>
 
 	<body>
+        <?php include "../header.html"; ?>
 		<h1> About the Developers </h1>
 		<hr>
 		<a href="./../Homepage/home.html"><img src="./../Global_Images/Logo.png" alt="ATXGRADPHOTO"></a>
