@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
-        <title>ATX Grad Photos</title>
-        <link rel="stylesheet" href="./home.css">
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<?php include "head-content.html"; ?>
         <script src="carousel.js" defer></script>
         <script src="navshrink.js" defer></script>
     </head>
@@ -22,7 +19,8 @@
                 <a class="orange" href="#"><img src="./../Global_Images/Logo.png" alt="ATXGRADPHOTO" height = "50" width = "50"></a>
             </div>
         </div>
-        <div id="borderless-container"> <!-- Everything below header -->
+
+        <div id="container"> <!-- Everything below header -->
             <div id="Discover">
                 <h1> Discover Photographers in the Austin Area</h1>
             </div>
