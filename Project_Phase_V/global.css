@@ -1,0 +1,71 @@
+/* GLOBAL CSS */
+
+/* Use anytime you want something burnt-orange */
+.burnt-orange {
+    background-color: #cc5500;
+    color: white;
+}
+.burnt-orange a, .burnt-orange a:hover, .burnt-orange a:visited {
+    color: white;
+}
+
+/* Header */
+#logo-navbar-collapsed {
+    height: 50px;
+    width: 50px;
+}
+
+/* <textarea> elements */
+.textarea {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.textarea:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.textarea::placeholder {
+  color: #6c757d;
+  opacity: 1;
+}
+
+
+/* Set max width for whole container, so doesn't grow infinitely. To use, do this in HTML: <div class="container setmax"> */
+.container.setmax {
+    max-width: 720px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #ff6a00;
+    color: white;
+    margin-top: 100px;
+}
+#logo-bottom {
+    width: 100px;
+    height: 100px;
+}
+.footer-link {
+    color: white;
+}
+.footer-link:hover {
+    color: white;
+    font-style: underline;
+}
+.footer-link:visited {
+    color: #eee;
+}
