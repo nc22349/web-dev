@@ -8,6 +8,9 @@
 .burnt-orange a, .burnt-orange a:hover, .burnt-orange a:visited {
     color: white;
 }
+.text-burnt-orange {
+    color: #cc5500;
+}
 
 /* Header */
 #logo-navbar-collapsed {
