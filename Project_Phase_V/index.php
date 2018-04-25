@@ -9,65 +9,42 @@
         
         <!-- JQUERY -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+	<!-- CUSTOM STYLESHEETS -->
+	<link rel="stylesheet" href="global.css">
+	<link rel="stylesheet" href="home.css">
     </head>
     <body>
-        <div id="header">
-            <div id="register_buttons">
-                <input type="submit" name="Register" value="Register">
-                <input type="submit" name="Sign In" value="Sign In">
-            </div>
-            <div id="small_p">
-                <p> Photographer? <a class="orange" href="../Become_A_Photographer">Register here</a></p>
-            </div>
-
-            <div id="logo">
-                <a class="orange" href="#"><img src="./../Global_Images/Logo.png" alt="ATXGRADPHOTO" height = "50" width = "50"></a>
-            </div>
-        </div>
-
-        <div id="container"> <!-- Everything below header -->
-            <div id="Discover">
-                <h1> Discover Photographers in the Austin Area</h1>
-            </div>
-            <img src="./../Global_Images/camera.png" alt="Camera Clip Art" height = "150" width = "150">
-            <input type="submit" name="Browse" value="Browse">
+	<?php include "header.html"; ?>
+        <div class="container-fluid px-0"> <!-- Everything below header -->
+	    <!-- Slideshow Overview -->
             
-            <section class="block-item"> <!-- Each page section -->
-                <div id="overview-carousel">
-                    <div id="slideshow-container">
-                        <div class="slide" id="slide-1">
-                            <div class="slide-img" style="background-color: blue;"></div>
-                            <div class="slide-body">
-                                <h1 class="slide-text">Get Portraits You Will Love From Photographers Near You</h1>
-                            </div>
+	    <!-- Testimonials -->
+            <section class="align-items-center bg-aaa py-3">
+                <div class="row setmax">
+		    <h2>What our customers are saying</h2>
+                    <div class="col-lg-6 order-lg-2">
+			<div class="py-5 pr-5 text-center">
+			    <h5>Brittany</h5>
+			    <p class="lead">ATX Grad Photo helped me find a photographer two days before my graduation!</p>
+                            <h5 class="font-weight-light text-burnt-orange">Spring 2018 | Business</h5>
                         </div>
-                        <div class="slide" id="slide-2">
-                            <div class="slide-img" style="background-color: green;"></div>
-                            <div class="slide-body">
-                                <h1 class="slide-text">View Profiles of Photographers You Like</h1>
-                            </div>
-                        </div>
-                        <div class="slide" id="slide-3">
-                            <div class="slide-img" style="background-color: orange;"></div>
-                            <div class="slide-body">
-                                <h1 class="slide-text">Contact the Ones You Want</h1>
-                             </div>
-                        </div>
-                        <div id="slide-adv-btns">
-                            <span class="slide-adv-btn active-dot" id="0"  onclick="showSelectedSlide(this.id)"></span>
-                            <span class="slide-adv-btn" id="1"  onclick="showSelectedSlide(this.id)"></span> 
-                            <span class="slide-adv-btn" id="2"  onclick="showSelectedSlide(this.id)"></span>
+                    </div>
+                </div>
+ 
+                    <div class="col-lg-6 order-lg-1">
+                        <img class="mw-100 w-auto ml-auto mr-auto" src="c2photo1.jpeg" alt="amy">
+                    </div>
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="py-5 pr-5 text-center">
+                            <h5>Amy</h5>
+                            <p class="lead">ATXGradPhoto helped take the stress out of a very stressful situation!</p>
+                            <h5 class="font-weight-light text-burnt-orange">Fall 2017 | Engineering</h5>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="block-item">
-                <div id="testimonials">
-                    <div id="WOCAS">
-                        <h1> What Our Customers Are Saying...</h1>
-                    </div>
-                    <div id="customer1">
-                        <img src="white.jpeg" alt="whitespace1">
+.jpeg" alt="whitespace1">
                         <img src="white.jpeg" alt="whitespace2">
                         <img src="c1photo1.jpg" alt="Brittany1" height="10" width="10">
                         <div id="c1_quote">
