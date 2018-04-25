@@ -24,9 +24,9 @@
             
     	    <!-- Testimonials -->
             <section class="align-items-center bg-light py-3">
-		<h4 class="text-center">What Our Customers Are Saying</h4>
+                <h4 class="text-center">What Our Customers Are Saying</h4>
                 <div class="row setmax-900">
-		    <div class="col-lg-6 order-lg-2">
+                    <div class="col-lg-6 order-lg-2">
                         <img class="w-lg-100 mx-auto" src="c1photo1.jpg" alt="brittany">
                     </div>
                     <div class="col-lg-6 order-lg-1">
@@ -52,22 +52,15 @@
             </section>
  
             <!-- Join the Community -->
-            <section class="block-item">
-                <div id="JTCOP">
-                    <div id="joinheader">
-                        <h1> Join the Community of Photographers </h1>
-                    </div>
-
-                    <div id="joinp">
-                        <p> Partner with ATXGradPhoto for a new way to find clients </p>
-                    </div>
-
-                    <div id="joinlink">
-                        <a class="orange" href="../Become_A_Photographer">Getting Started ></a>
-                    </div>
-                </div>
+            <section class="align-items-center py-3 setmax-900">
+                <h1>Join the Community of Photographers</h1>
+                <p class="lead">Partner with ATXGradPhoto for a new way to find clients</p>
+                <a class="text-burnt-orange">Get Started ></a>
             </section>
         </div>
+        
+        <?php include "footer.html"; ?>
+        <!--
         <footer>
             <a href="#"><img id="logo-bottom" src="../Global_Images/Logo.png" alt="ATXGRADPHOTO" height = "50" width = "50"></a>
             <div id="bar">
@@ -86,6 +79,6 @@
                     <td><a class="footer-link" href="../Contact_Us/">Contact Us</a></td>
                 </tr>
             </table>
-        </footer>
+        </footer>-->
     </body>
 </html>
