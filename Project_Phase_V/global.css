@@ -51,6 +51,11 @@
 .container.setmax {
     max-width: 720px;
 }
+.setmax-900 {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /* FOOTER */
 footer {
