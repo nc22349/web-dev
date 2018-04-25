@@ -25,7 +25,10 @@
     	    <!-- Testimonials -->
             <section class="align-items-center bg-aaa py-3">
                 <div class="row setmax">
-                    <h2>What our customers are saying</h2>
+                    <h4 class="text-center">What our customers are saying</h4>
+                    <div class="col-lg-6 order-lg-2">
+                        <img class="w-lg-100 mx-auto" src="c1photo1.jpg" alt="brittany">
+                    </div>
                     <div class="col-lg-6 order-lg-2">
                         <div class="py-5 pr-5 text-center">
                             <h5>Brittany</h5>
