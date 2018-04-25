@@ -6,32 +6,35 @@
         <!-- BOOTSTRAP -->
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <!-- CUSTOM STYLESHEETS -->
+        <link rel="stylesheet" href="global.css">
+        <link rel="stylesheet" href="home.css">
         
         <!-- JQUERY -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-
-	<!-- CUSTOM STYLESHEETS -->
-	<link rel="stylesheet" href="global.css">
-	<link rel="stylesheet" href="home.css">
+        
+        <!-- CUSTOM SCRIPTS -->
+        <script src="hideNavbar.js"></script> 
     </head>
     <body>
-	<?php include "header.html"; ?>
-        <div class="container-fluid px-0"> <!-- Everything below header -->
-	    <!-- Slideshow Overview -->
+        <?php include "header.html"; ?> <!-- Hidden by CSS -->
+        <div class="container-fluid px-0">
+            <!-- Slideshow Overview -->
             
-	    <!-- Testimonials -->
+    	    <!-- Testimonials -->
             <section class="align-items-center bg-aaa py-3">
                 <div class="row setmax">
-		    <h2>What our customers are saying</h2>
+                    <h2>What our customers are saying</h2>
                     <div class="col-lg-6 order-lg-2">
-			<div class="py-5 pr-5 text-center">
-			    <h5>Brittany</h5>
-			    <p class="lead">ATX Grad Photo helped me find a photographer two days before my graduation!</p>
+                        <div class="py-5 pr-5 text-center">
+                            <h5>Brittany</h5>
+                            <p class="lead">ATX Grad Photo helped me find a photographer two days before my graduation!</p>
                             <h5 class="font-weight-light text-burnt-orange">Spring 2018 | Business</h5>
                         </div>
                     </div>
                 </div>
- 
+                <div class="row setmax">
                     <div class="col-lg-6 order-lg-1">
                         <img class="mw-100 w-auto ml-auto mr-auto" src="c2photo1.jpeg" alt="amy">
                     </div>
@@ -44,29 +47,8 @@
                     </div>
                 </div>
             </section>
-.jpeg" alt="whitespace1">
-                        <img src="white.jpeg" alt="whitespace2">
-                        <img src="c1photo1.jpg" alt="Brittany1" height="10" width="10">
-                        <div id="c1_quote">
-                            <p> ATXGradPhoto helped me find a photographer 2 days before my graduation</p>
-                        </div>
-                        <div id="c1_info">
-                            <p> Brittany | Spring 2018 | Business </p>
-                        </div>
-                        <img src ="c1photo2.jpg" alt="Brittany2" height="300" width="375">
-                    </div>
-                    <div id="customer2">
-                        <img src="c2photo1.jpeg" alt="Amy1" height="10" width="10">
-                        <div id="c2_quote">
-                            <p> ATXGradPhoto helped take the stress out of a very stressful situation</p>
-                        </div>
-                        <div id="c2_info">
-                            <p> Amy | Fall 2017 | Engineering </p>
-                        </div>
-                        <img src ="c2photo2.jpeg" alt="Amy2" height="150" width="100">
-                    </div>
-                </div>
-            </section>
+ 
+            <!-- Join the Community -->
             <section class="block-item">
                 <div id="JTCOP">
                     <div id="joinheader">
