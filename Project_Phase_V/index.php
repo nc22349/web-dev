@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-	<?php include "head-content.html"; ?>
-        <script src="carousel.js" defer></script>
-        <script src="navshrink.js" defer></script>
+        <meta charset="utf-8">
+        
+        <!-- BOOTSTRAP -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        
+        <!-- JQUERY -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     </head>
     <body>
         <div id="header">
