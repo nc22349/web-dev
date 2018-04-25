@@ -23,13 +23,13 @@
             <!-- Slideshow Overview -->
             
     	    <!-- Testimonials -->
-            <section class="align-items-center bg-aaa py-3">
-                <div class="row setmax">
-                    <h4 class="text-center">What our customers are saying</h4>
-                    <div class="col-lg-6 order-lg-2">
+            <section class="align-items-center bg-light py-3">
+		<h4 class="text-center">What Our Customers Are Saying</h4>
+                <div class="row setmax-900">
+		    <div class="col-lg-6 order-lg-2">
                         <img class="w-lg-100 mx-auto" src="c1photo1.jpg" alt="brittany">
                     </div>
-                    <div class="col-lg-6 order-lg-2">
+                    <div class="col-lg-6 order-lg-1">
                         <div class="py-5 pr-5 text-center">
                             <h5>Brittany</h5>
                             <p class="lead">ATX Grad Photo helped me find a photographer two days before my graduation!</p>
@@ -37,7 +37,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row setmax">
+                <div class="row setmax-900">
                     <div class="col-lg-6 order-lg-1">
                         <img class="mw-100 w-auto ml-auto mr-auto" src="c2photo1.jpeg" alt="amy">
                     </div>
