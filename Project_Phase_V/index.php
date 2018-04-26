@@ -9,7 +9,6 @@
 
         <!-- CUSTOM STYLESHEETS -->
         <link rel="stylesheet" href="global.css">
-        <link rel="stylesheet" href="home.css">
         
         <!-- JQUERY -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -64,7 +63,7 @@
                                     <h4>View the profiles of photographers you like!</h4>
                                 </div>
                             </div>
-                            <div class="carousel-item" style="height: 400px; width: 800px;">
+                            <div class="carousel-item">
                                 <img src="Homepage_Resources/tower.jpg" alt="Tower" class="d-block img-fluid">
                                 <div class="carousel-caption d-none d-md-block">
                                     <h4>Contact the photographers you want!</h4>
