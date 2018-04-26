@@ -43,7 +43,7 @@
             <!-- Slideshow Overview -->
             <section class="align-items-center py-3"> <!-- Each page section -->
                 <div class="row setmax-900">
-                    <div id="howItWorks" class="carousel slide mx-auto" data-ride="carousel" data-interval="false">
+                    <div id="howItWorks" class="carousel slide mx-auto" data-ride="carousel" data-interval="false" style="max-height: 400px;">
                         <!-- Bottom buttons -->
                         <ol class="carousel-indicators">
                             <li data-target="howItWorks" data-slide-to="0" class="active"></li>
