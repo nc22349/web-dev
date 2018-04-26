@@ -9,14 +9,14 @@
     print <<<UNIVERSAL
 
         <nav id="navbar" class="navbar navbar-expand-md navbar-light bg-light sticky-top justify-content-between border-bottom">
-            <a href="$cd"><img src="{$cd . 'Global_Images/Logo.png'}" alt="Home" style="height: 60px;"</img></a>
+            <a href="$cd"><img src="${cd}Global_Images/Logo.png" alt="Home" style="height: 60px;"</img></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navcollapse" aria-controls="navcollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse pl-5" id="navcollapse">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item pr-3">
-                        <a class='nav-link text-burnt-orange' href='{$cd . "no_page.html"}'>Browse</a>
+                        <a class="nav-link text-burnt-orange" href="${cd}no_page.html">Browse</a>
                     </li>
                     <li class="nav-item">
                         <form class="form-inline my-2 my-md-0">
@@ -33,7 +33,7 @@ UNIVERSAL;
     if (isset($_SESSION["user"])) {
         print <<<ACCT
                     <li class="nav-item">
-                        <a class="nav-link text-burnt-orange" href="{$cd . 'logout.php'}">Log Out</a>
+                        <a class="nav-link text-burnt-orange" href="${cd}logout.php">Log Out</a>
                     </li>
 ACCT;
     // If no user logged in, print NOACCT
@@ -50,7 +50,7 @@ ACCT;
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-burnt-orange" href="{$cd . 'Become_A_Photographer'}" style="width: 100px;">Register</a>
+                        <a class="nav-link text-burnt-orange" href="${cd}Become_A_Photographer" style="width: 100px;">Register</a>
                     </li>
 NOACCT;
     }
