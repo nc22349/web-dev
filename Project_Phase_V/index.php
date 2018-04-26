@@ -18,19 +18,21 @@
         <script src="hideNavbar.js" defer></script> 
     </head>
     <body>
-        <?php include "header.html"; ?> <!-- Hidden by CSS -->
+        <?php include "header.html"; ?>
+	<div class="jumbotron-fluid" style="height: 100px;">
+	</div>
         <div class="container-fluid px-0">
             <!-- Slideshow Overview -->
             
     	    <!-- Testimonials -->
-            <section class="align-items-center bg-light py-3">
-                <h4 class="text-center">What Our Customers Are Saying</h4>
+            <section class="align-items-center bg-eee py-3">
+                <h1 class="text-center mb-5">What Our Customers Are Saying</h1>
                 <div class="row setmax-900">
                     <div class="col-lg-6 order-lg-2">
-                        <img class="w-lg-100 mx-auto" src="c1photo1.jpg" alt="brittany">
+                        <img class="w-lg-100 mx-auto" src="Homepage_Resources/c1photo1.jpg" alt="brittany">
                     </div>
                     <div class="col-lg-6 order-lg-1">
-                        <div class="py-5 pr-5 text-center">
+                        <div class="py-5 p-3 text-center">
                             <h5>Brittany</h5>
                             <p class="lead">ATX Grad Photo helped me find a photographer two days before my graduation!</p>
                             <h5 class="font-weight-light text-burnt-orange">Spring 2018 | Business</h5>
@@ -39,10 +41,10 @@
                 </div>
                 <div class="row setmax-900">
                     <div class="col-lg-6 order-lg-1">
-                        <img class="mw-100 w-auto ml-auto mr-auto" src="c2photo1.jpeg" alt="amy">
+                        <img class="mw-100 w-auto ml-auto mr-auto" src="Homepage_Resources/c2photo1.jpeg" alt="amy">
                     </div>
                     <div class="col-lg-6 order-lg-2">
-                        <div class="py-5 pr-5 text-center">
+                        <div class="py-5 p-3 text-center">
                             <h5>Amy</h5>
                             <p class="lead">ATXGradPhoto helped take the stress out of a very stressful situation!</p>
                             <h5 class="font-weight-light text-burnt-orange">Fall 2017 | Engineering</h5>
@@ -52,10 +54,10 @@
             </section>
  
             <!-- Join the Community -->
-            <section class="align-items-center py-3 setmax-900">
+            <section class="align-items-center py-5 setmax-900">
                 <h1>Join the Community of Photographers</h1>
-                <p class="lead">Partner with ATXGradPhoto for a new way to find clients</p>
-                <a class="text-burnt-orange">Get Started ></a>
+                <p class="lead">Partner with ATXGradPhoto for a new way to find clients.</p>
+                <a class="text-burnt-orange" href="Become_A_Photographer">Get Started ></a>
             </section>
         </div>
         

@@ -1,16 +1,27 @@
 /* GLOBAL CSS */
 
-/* Use anytime you want something burnt-orange */
+/* Color controls */
 .burnt-orange {
+    /* Sets background color of any element */
     background-color: #cc5500;
     color: white;
-}
+} 
 .burnt-orange a, .burnt-orange a:hover, .burnt-orange a:visited {
+    /* This comes into effect automatically anytime there's a link inside a .burnt-orange element */
     color: white;
 }
-.text-burnt-orange {
+.text-burnt-orange, a:hover.text-burnt-orange, a:visited.text-burnt-orange {
+    /* Sets any text to burnt-orange */
     color: #cc5500;
 }
+
+.bg-aaa {
+    background-color: #aaa;
+}
+.bg-eee {
+    background-color: #eee;
+}
+
 
 /* Header */
 #logo-navbar-collapsed {
