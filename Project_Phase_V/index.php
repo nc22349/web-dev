@@ -18,9 +18,26 @@
         <script src="hideNavbar.js" defer></script> 
     </head>
     <body>
+	<!-- Header -->
         <?php include "header.php"; ?>
-	<div class="jumbotron-fluid" style="height: 100px;">
+
+	<div class="jumbotron bg-eee pt-0">
+	    <div class="container-fluid">
+		<div class="row">
+		    <div class="col-md-6" style="position: relative;">
+			<div style="position: absolute; top: 50%; transform: translateY(-50%);">
+	    		    <h1>Discover photographers in the Austin area.</h1>
+	    		    <p class="lead">Graduating and need someone to take your picture? We've got you covered.</p>
+	    		    <button class="btn burnt-orange" type="button" href="no_page.html">Browse Photographers</button>
+			</div>
+		    </div>
+		    <div class="col-md-6 text-center">
+			<img src="Global_Images/camera.png" class="img-fluid h-auto mx-auto" style="max-width: 400px;">
+		    </div>
+		</div>
+	    </div>
 	</div>
+
         <div class="container-fluid px-0">
             <!-- Slideshow Overview -->
             
