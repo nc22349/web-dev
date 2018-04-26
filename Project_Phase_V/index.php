@@ -22,7 +22,7 @@
         <?php include "header.php"; ?>
 
         <!-- Jumbotron -->
-        <div class="jumbotron bg-eee pt-0">
+        <div class="jumbotron bg-eee pt-0 mb-0">
             <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6" style="position: relative;">
@@ -42,20 +42,21 @@
         <div class="container-fluid px-0">
             <!-- Slideshow Overview -->
             <section class="align-items-center py-3"> <!-- Each page section -->
-                <div id="howItWorks" class="carousel slide" data-ride="carousel">
+		<div class="row setmax-900">
+                <div id="howItWorks" class="carousel slide mx-auto" data-ride="carousel" data-interval="false">
                     <ol class="carousel-indicators">
                         <li data-target="howItWorks" data-slide-to="0" class="active"></li>
                         <li data-target="howItWorks" data-slide-to="1"></li>
                         <li data-target="howItWorks" data-slide-to="2"></li>
                     </ol>
                     <div class="carousel-inner">
-                        <div class="carousel-item active">
+                        <div class="carousel-item active bg-aaa" style="height: 400px; width: 800px;">
                             
                         </div>
-                        <div class="carousel-item">
+                        <div class="carousel-item bg-info" style="height: 400px; width: 800px;">
                             
                         </div>
-                        <div class="carousel-item">
+                        <div class="carousel-item bg-danger" style="height: 400px; width: 800px;">
                             
                         </div>
                     </div>
@@ -64,10 +65,12 @@
                         <span class="sr-only">Previous</span>
                     </a>
                     <a class="carousel-control-next" href="#howItWorks" role="button" data-slide="next">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
+		</div>
+	    </section>
                 <!--<div id="overview-carousel">
                     <div id="slideshow-container">
                         <div class="slide" id="slide-1">
