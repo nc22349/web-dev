@@ -42,35 +42,47 @@
         <div class="container-fluid px-0">
             <!-- Slideshow Overview -->
             <section class="align-items-center py-3"> <!-- Each page section -->
-		<div class="row setmax-900">
-                <div id="howItWorks" class="carousel slide mx-auto" data-ride="carousel" data-interval="false">
-                    <ol class="carousel-indicators">
-                        <li data-target="howItWorks" data-slide-to="0" class="active"></li>
-                        <li data-target="howItWorks" data-slide-to="1"></li>
-                        <li data-target="howItWorks" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active bg-aaa" style="height: 400px; width: 800px;">
-                            
+                <div class="row setmax-900">
+                    <div id="howItWorks" class="carousel slide mx-auto" data-ride="carousel" data-interval="false">
+                        <!-- Bottom buttons -->
+                        <ol class="carousel-indicators">
+                            <li data-target="howItWorks" data-slide-to="0" class="active"></li>
+                            <li data-target="howItWorks" data-slide-to="1"></li>
+                            <li data-target="howItWorks" data-slide-to="2"></li>
+                        </ol>
+                        <!-- Slide content -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="Homepage_Resources/c2photo2.jpeg" alt="Hook 'em" class="d-block img-fluid">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h4>Get portraits you will love from photographers near you. No signup required!</h4>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="Homepage_Resources/c1photo2.jpg" alt="Cap" class="d-block img-fluid">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h4>View the profiles of photographers you like!</h4>
+                                </div>
+                            </div>
+                            <div class="carousel-item bg-danger" style="height: 400px; width: 800px;">
+                                <img src="Homepage_Resources/tower.jpg" alt="Tower" class="d-block img-fluid">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h4>Contact the photographers you want!</h4>
+                                </div>
+                            </div>
                         </div>
-                        <div class="carousel-item bg-info" style="height: 400px; width: 800px;">
-                            
-                        </div>
-                        <div class="carousel-item bg-danger" style="height: 400px; width: 800px;">
-                            
-                        </div>
+                        <!-- L/R slide controls -->
+                        <a class="carousel-control-prev" href="#howItWorks" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#howItWorks" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
                     </div>
-                    <a class="carousel-control-prev" href="#howItWorks" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#howItWorks" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
                 </div>
-		</div>
-	    </section>
+            </section>
                 <!--<div id="overview-carousel">
                     <div id="slideshow-container">
                         <div class="slide" id="slide-1">
