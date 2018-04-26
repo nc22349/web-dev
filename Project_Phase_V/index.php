@@ -62,25 +62,6 @@
         </div>
         
         <?php include "footer.html"; ?>
-        <!--
-        <footer>
-            <a href="#"><img id="logo-bottom" src="../Global_Images/Logo.png" alt="ATXGRADPHOTO" height = "50" width = "50"></a>
-            <div id="bar">
-            </div>
-            <table>
-                <tr>
-                    <td><a class="footer-link" href="./../About/about.php">About the Developers</a></td>
-                    <td><a class="footer-link" href="../no_page.html">FAQ</a></td>
-                </tr>
-                <tr>
-                    <td><a class="footer-link" href="./../Become_A_Photographer">Become a Photographer</a></td>
-                    <td><a class="footer-link" href="./../Site_Feedback/">Site Feedback</a></td>
-                </tr>
-                <tr>
-                    <td><a class="footer-link" href="../no_page.html">Help</a></td>
-                    <td><a class="footer-link" href="../Contact_Us/">Contact Us</a></td>
-                </tr>
-            </table>
-        </footer>-->
+	<?php include "bottomScripts.html"; ?>
     </body>
 </html>

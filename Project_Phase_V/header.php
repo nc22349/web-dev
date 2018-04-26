@@ -3,8 +3,8 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navcollapse" aria-controls="navcollapse" aria-expanded="false" aria-label="Toggle navigation">
 	<span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navcollapse">
-        <ul class="navbar-nav pl-5 mr-auto">
+    <div class="collapse navbar-collapse pl-5" id="navcollapse">
+        <ul class="navbar-nav mr-auto">
             <li class="nav-item pr-3">
 		<a class="nav-link text-burnt-orange" href="no_page.html">Browse</a>
 	    </li>
@@ -18,12 +18,30 @@
             <?php
                 session_start();
                 if (isset($_SESSION["user"])) {
-                    print '<li class="nav-item"><a class="nav-link text-burnt-orange" href="logout.php">Log Out</a></li>';
+                    print <<<ACCT
+			    <li class="nav-item">
+			        <a class="nav-link text-burnt-orange" href="logout.php">Log Out</a>
+			    </li>
+			</ul>
+ACCT;
                 } else {
-                    print '<li class="nav-item"><a class="nav-link text-burnt-orange" href="Become_A_Photographer">Register</a></li>';
-                    print '<li class="nav-item"><a class="nav-link text-burnt-orange" href="no_page.html">Sign In</a></li>';
+                    print <<<NOACCT
+                    	    <li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle text-burnt-orange" id="signinDropdownToggler" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 100px;">Sign In</a>
+				<div class="dropdown-menu" aria-labelledby="signinDropdownToggler" style="min-width: 200px;">
+				    <form class="px-2 py-2 mr-0">
+					<input type="text" class="form-control mb-1 w-100" placeholder="Username">
+				        <input type="password" class="form-control mb-1 w-100" placeholder="Password">
+				        <button type="submit" class="btn burnt-orange mx-auto" style="width: 85px; display: block;">Sign In</button>
+			            </form>
+			        </div>
+			    </li>
+    			    <li class="nav-item">
+			        <a class="nav-link text-burnt-orange" href="Become_A_Photographer" style="width: 100px;">Register</a>
+			    </li>
+		        </ul>
+NOACCT;
                 }
             ?>
-        </ul>
     </div>
 </nav>
