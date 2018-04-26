@@ -1,12 +1,24 @@
+<?php
+    if ($home === true) {
+	$cd = "";
+    } else {
+	$cd = "../";
+    }
+?>
+
 <nav id="navbar" class="navbar navbar-expand-md navbar-light bg-light sticky-top justify-content-between border-bottom">
-    <a href="../Homepage/home.html"><img src="Global_Images/Logo.png" alt="Home" style="height: 60px;"</img></a>
+    <?php
+	print <<<LOGO
+    	    <a href="$cd"><img src="{$cd . 'Global_Images/Logo.png'}" alt="Home" style="height: 60px;"</img></a>
+LOGO;
+    ?>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navcollapse" aria-controls="navcollapse" aria-expanded="false" aria-label="Toggle navigation">
 	<span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse pl-5" id="navcollapse">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item pr-3">
-		<a class="nav-link text-burnt-orange" href="no_page.html">Browse</a>
+		<?php print "<a class='nav-link text-burnt-orange' href='{$cd . "no_page.html"}'>Browse</a>" ?>
 	    </li>
 	    <li class="nav-item">
 		<form class="form-inline my-2 my-md-0">
