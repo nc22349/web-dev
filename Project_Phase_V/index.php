@@ -18,7 +18,7 @@
         <script src="hideNavbar.js" defer></script> 
     </head>
     <body>
-        <?php include "header.html"; ?>
+        <?php include "header.php"; ?>
 	<div class="jumbotron-fluid" style="height: 100px;">
 	</div>
         <div class="container-fluid px-0">

@@ -12,7 +12,10 @@
 }
 .text-burnt-orange, a:hover.text-burnt-orange, a:visited.text-burnt-orange {
     /* Sets any text to burnt-orange */
-    color: #cc5500;
+    color: #cc5500 !important;
+}
+a:hover.text-burnt-orange {
+    text-decoration: underline;
 }
 
 .bg-aaa {
@@ -22,12 +25,13 @@
     background-color: #eee;
 }
 
-
 /* Header */
-#logo-navbar-collapsed {
-    height: 50px;
-    width: 50px;
+.form-control.focus-orange:focus {
+    border-color: #cc5500;
+    box-shadow: none;
+    outline: none;
 }
+
 
 /* <textarea> elements */
 .textarea {
