@@ -43,7 +43,7 @@
             <!-- Slideshow Overview -->
             <section class="align-items-center py-3"> <!-- Each page section -->
                 <div class="row setmax-900">
-                    <div id="howItWorks" class="carousel slide mx-auto" data-ride="carousel" data-interval="false" style="max-height: 400px;">
+                    <div id="howItWorks" class="carousel slide mx-auto" data-ride="carousel" data-interval="false" style="max-width: 800px; max-height: 400px;">
                         <!-- Bottom buttons -->
                         <ol class="carousel-indicators">
                             <li data-target="howItWorks" data-slide-to="0" class="active"></li>
@@ -53,18 +53,18 @@
                         <!-- Slide content -->
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="Homepage_Resources/c2photo2.jpeg" alt="Hook 'em" class="d-block img-fluid">
+                                <img src="Homepage_Resources/hookem.jpg" alt="Hook 'em" class="d-block img-fluid">
                                 <div class="carousel-caption d-none d-md-block">
                                     <h4>Get portraits you will love from photographers near you. No signup required!</h4>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="Homepage_Resources/c1photo2.jpg" alt="Cap" class="d-block img-fluid">
+                                <img src="Homepage_Resources/bevo.jpg" alt="Cap" class="d-block img-fluid">
                                 <div class="carousel-caption d-none d-md-block">
                                     <h4>View the profiles of photographers you like!</h4>
                                 </div>
                             </div>
-                            <div class="carousel-item bg-danger" style="height: 400px; width: 800px;">
+                            <div class="carousel-item" style="height: 400px; width: 800px;">
                                 <img src="Homepage_Resources/tower.jpg" alt="Tower" class="d-block img-fluid">
                                 <div class="carousel-caption d-none d-md-block">
                                     <h4>Contact the photographers you want!</h4>
@@ -83,34 +83,6 @@
                     </div>
                 </div>
             </section>
-                <!--<div id="overview-carousel">
-                    <div id="slideshow-container">
-                        <div class="slide" id="slide-1">
-                            <div class="slide-img" style="background-color: blue;"></div>
-                            <div class="slide-body">
-                                <h1 class="slide-text">Get Portraits You Will Love From Photographers Near You</h1>
-                            </div>
-                        </div>
-                        <div class="slide" id="slide-2">
-                            <div class="slide-img" style="background-color: green;"></div>
-                            <div class="slide-body">
-                                <h1 class="slide-text">View Profiles of Photographers You Like</h1>
-                            </div>
-                        </div>
-                        <div class="slide" id="slide-3">
-                            <div class="slide-img" style="background-color: orange;"></div>
-                            <div class="slide-body">
-                                <h1 class="slide-text">Contact the Ones You Want</h1>
-                             </div>
-                        </div>
-                        <div id="slide-adv-btns">
-                            <span class="slide-adv-btn active-dot" id="0"  onclick="showSelectedSlide(this.id)"></span>
-                            <span class="slide-adv-btn" id="1"  onclick="showSelectedSlide(this.id)"></span> 
-                            <span class="slide-adv-btn" id="2"  onclick="showSelectedSlide(this.id)"></span>
-                        </div>
-                    </div>
-                </div>
-            </section>-->
             
     	    <!-- Testimonials -->
             <section class="align-items-center bg-eee py-3">
