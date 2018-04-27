@@ -23,7 +23,7 @@
         <?php include "header.php"; ?>
 
         <div class="bg-dark" style="height: 100vh; width: 100vw; overflow: hidden;">
-            <img src="" style="height: inherit;">
+            <img src="Homepage_Resources/mainbuilding.jpg" style="width: inherit;">
         </div>
              
         <!-- Jumbotron -->
