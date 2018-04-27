@@ -1,0 +1,8 @@
+navbar {
+    opacity: 0.2;
+}
+
+navbar:hover {
+    opacity: 1;
+    transition: opacity 1s;
+}
