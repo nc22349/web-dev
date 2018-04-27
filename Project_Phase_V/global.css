@@ -72,23 +72,12 @@ a:hover.text-burnt-orange {
     margin-right: auto;
 }
 
-/* FOOTER */
-footer {
-    background-color: #ff6a00;
-    color: white;
-    margin-top: 100px;
+/* VERTICAL CENTERING */
+.vertical-center-wrapper {
+    position: relative;
 }
-#logo-bottom {
-    width: 100px;
-    height: 100px;
-}
-.footer-link {
-    color: white;
-}
-.footer-link:hover {
-    color: white;
-    font-style: underline;
-}
-.footer-link:visited {
-    color: #eee;
+.vertical-center {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
