@@ -6,11 +6,11 @@
         <?php include "../head-content.html"; ?>
     </head>
     <body>
-        <?php include "../header.html"; ?>
+        <?php include "../navbar.php"; ?>
         <div class="container setmax">
             <div class="py-5 text-center">
                 <h2>Site Feedback</h2>
-                <p class="lead">We are happy to accept any comments you have about our site's usability and layout. Just fill out the form below and the ATX Grad Photo team will discuss your suggestions.</p>
+                <p class="lead">We are happy to accept any comments you have about our site's usability and layout. Just fill out the form below and the ATXGradPhoto team will discuss your suggestions.</p>
             </div>
             <form class="needs-validation" novalidate>
                 <div class="mb-3">
@@ -30,6 +30,6 @@
                 <button class="btn btn-lg burnt-orange" type="submit">Submit</button>
             </form>
         </div>
-        <?php include "./../footer.html"; ?>
+        <?php include "../footer.php"; ?>
     </body>
 </html>
