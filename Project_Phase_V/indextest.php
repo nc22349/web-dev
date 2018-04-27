@@ -11,7 +11,8 @@
 
         <!-- CUSTOM STYLESHEETS -->
         <link rel="stylesheet" href="global.css">
-        
+   	<link rel="stylesheet" href="navcsstest.css">
+     
         <!-- JQUERY -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         
@@ -20,7 +21,7 @@
     </head>
     <body>
 	   <!-- Header -->
-        <?php include "header.php"; ?>
+        <?php include "headertest.php"; ?>
 
         <div class="bg-dark" style="height: 100vh; width: 100vw; overflow: hidden;">
             <img src="Homepage_Resources/mainbuilding.jpg" style="width: inherit;">

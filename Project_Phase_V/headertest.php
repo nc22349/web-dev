@@ -8,7 +8,7 @@
     // Print content that is the same regardless of whether the user is logged in or not
     print <<<UNIVERSAL
 
-        <nav id="navbar" class="navbar navbar-expand-md navbar-light bg-light fixed-top justify-content-between border-bottom">
+        <nav id="navbar" class="navbar navbar-expand-md navbar-light bg-light fixed-top justify-content-between border-bottom" style="opacity: 0.5;">
             <a href="$cd"><img src="${cd}Global_Images/Logo.png" alt="Home" style="height: 60px;"</img></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navcollapse" aria-controls="navcollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
