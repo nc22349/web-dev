@@ -117,6 +117,5 @@
         </div>
         
         <?php include "footer.php"; ?>
-	<?php include "bottomScripts.html"; ?>
     </body>
 </html>
