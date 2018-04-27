@@ -14,11 +14,11 @@
             </div>
             <form class="needs-validation" novalidate>
                 <div class="mb-3">
-                    <label for="firstName">Name<span class="text-muted">(Optional)</span></label>
+                    <label for="firstName">Name<span class="text-muted"> (Optional)</span></label>
                     <input type="text" class="form-control" id="name">
                 </div>
                 <div class="mb-3">
-                    <label for="email">Email<span class="text-muted">(Optional)</span></label>
+                    <label for="email">Email<span class="text-muted"> (Optional)</span></label>
                     <input type="email" class="form-control" id="email" placeholder="you@example.com">
                     <div class="invalid-feedback">This email is not valid.</div>
                 </div>
@@ -27,7 +27,9 @@
                     <textarea class="textarea" id="feedback" placeholder="Your feedback here..."></textarea>
                 </div>
                 <hr class="mb-4">
-                <button class="btn btn-lg burnt-orange" type="submit">Submit</button>
+		<div class="text-center">
+                    <button class="btn btn-lg burnt-orange" type="submit">Submit</button>
+		</div>
             </form>
         </div>
         <?php include "../footer.php"; ?>
