@@ -122,7 +122,7 @@
             </section>
         </div>
         
-        <?php include "footer.html"; ?>
+        <?php include "footer.php"; ?>
 	<?php include "bottomScripts.html"; ?>
     </body>
 </html>
