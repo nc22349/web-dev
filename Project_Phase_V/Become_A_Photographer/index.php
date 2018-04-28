@@ -26,12 +26,12 @@
                 </div>
                 <div class="mb-3">
                     <label for="email">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                    <input type="email" class="form-control" name="email" placeholder="you@example.com">
                     <div class="invalid-feedback">Valid email is required.</div>
                 </div>
                 <div class="mb-3">
                     <label for="password">Password</label>
-                    <input type="password" class="form-control" id="password" placeholder="***********">
+                    <input type="password" class="form-control" name="password" placeholder="***********">
                     <div class="invalid-feedback">Your Password Must Contain: <table><tr><th>One Capital Letter</th><th>One Special Character</th><th>One Number</th></tr></table></div>
                 </div>
                 <hr class="mb-4">

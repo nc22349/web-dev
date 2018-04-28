@@ -3,7 +3,6 @@
     {
         $file = fopen("../user_pass.txt", "r");
         $user = $_POST['email'];
-        echo $user;
         $taken = false;
         while(!feof($file))
         {
@@ -21,13 +20,12 @@
         }
         else
         {
-            echo "It is not taken";
-            /*$password = $_POST['password'];
+            $password = $_POST['password'];
             $str = "$user:$password";
             $file = fopen("../user_pass.txt", "a");
             fwrite($file, "$str\n");
             setcookie("success", $user, time() + 86400*1095, "/");
-            header("Location: ../");*/
+            header("Location: ../");
         }
     }
 ?>
