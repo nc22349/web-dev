@@ -30,7 +30,7 @@ UNIVERSAL;
     session_start();
 
     // If user is logged in, print ACCT
-    if (isset($_SESSION["user"])){
+    if (isset($_COOKIE["success"])){
         print <<<ACCT
                     <li class="nav-item">
                         <a class="nav-link text-burnt-orange" href="${cd}Become_A_Photographer/logout.php">Log Out</a>
