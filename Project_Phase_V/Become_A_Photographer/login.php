@@ -18,6 +18,5 @@ if(isset($_POST['login'])){
 		echo 'alert("Invalid username or password. Please try again.")';
 		echo '</script>';
 	}
-	print_r($_COOKIE["success"]);
-	header("Location: ");
+	header("Location: ../");
 }
