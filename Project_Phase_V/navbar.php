@@ -74,7 +74,7 @@ NOACCT;
             echo 'alert("Invalid username or password. Please try again.")';
             echo '</script>';
         }
-        header("Location: ../");
+        header("Location: ./");
     }
         }
 
