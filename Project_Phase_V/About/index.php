@@ -20,7 +20,7 @@
                 </div>
                 <div class="col-lg-6">
 					<div class="text-center">
-                        <img class="rounded" src="Zee.jpg" alt="Zee" style="max-width: 350px">
+                        <img class="rounded" src="Zee.jpeg" alt="Zee" style="max-width: 350px">
                     </div>
                     <p class="lead">I am a UT Austin Junior majoring in Economics, with a minor in Computer Science. I also have a passion for photography, hiking/rock climbing, and binge watching The Office</p>
                     <p>Email: <a href="mailto:zee_hussain@utexas.edu">zee_hussain@utexas.edu</a></p>
