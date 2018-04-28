@@ -12,7 +12,7 @@
                 <h2>Site Feedback</h2>
                 <p class="lead">We are happy to accept any comments you have about our site's usability and layout. Just fill out the form below and the ATXGradPhoto team will discuss your suggestions.</p>
             </div>
-            <form class="needs-validation" novalidate>
+            <form action="mailto:zee_hussain@utexas.edu" method="post" enctype="text/plain" class="needs-validation" novalidate>
                 <div class="mb-3">
                     <label for="firstName">Name<span class="text-muted"> (Optional)</span></label>
                     <input type="text" class="form-control" id="name">

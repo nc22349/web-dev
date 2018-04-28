@@ -6,7 +6,7 @@
 	<?php include "../head-content.html"; ?>
     </head>
     <body>
-        <?php include "../header.html"; ?>
+        <?php include "../navbar.php"; ?>
         <div class="container setmax">
             <div class="py-5 text-center">
                 <h2>Contact Us</h2>
@@ -38,6 +38,6 @@
                 <button class="btn btn-lg burnt-orange" type="submit">Submit</button>
             </form>
         </div>
-        <?php include "./../footer.html"; ?>
+        <?php include "./../footer.php"; ?>
     </body>
 </html>
