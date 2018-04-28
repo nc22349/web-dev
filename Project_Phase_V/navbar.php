@@ -30,20 +30,21 @@ UNIVERSAL;
     session_start();
 
     // If user is logged in, print ACCT
-    if (isset($_SESSION["user"])){
+    if (isset($_COOKIE["success"])){
         print <<<ACCT
                     <li class="nav-item">
-                        <a class="nav-link text-burnt-orange" href="${cd}Become_A_Photographer/logout.php">Log Out</a>
+                        <form class="form-inline" action="${cd}logout.php" method="post">
+			    <button class="btn btn-outline-dark type="submit">Log Out</button>
+			</form>
                     </li>
 ACCT;
     // If no user logged in, print NOACCT
     } else {
-        $script = $_SERVER['PHP_SELF'];
         print <<<NOACCT
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-burnt-orange" id="signinDropdownToggler" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 100px;">Sign In</a>
                         <div class="dropdown-menu" aria-labelledby="signinDropdownToggler" style="min-width: 200px;">
-                            <form class="px-2 py-2 mr-0" action="$script" method="post">
+                            <form class="px-2 py-2 mr-0" action="${cd}login.php" method="post">
                                 <input id="user" name="user" type="text" class="form-control mb-1 w-100" placeholder="Username">
                                 <input id="password" name="password" type="password" class="form-control mb-1 w-100" placeholder="Password">
                                 <button type="submit" name="login" class="btn burnt-orange mx-auto" style="width: 85px; display: block;">Sign In</button>
@@ -56,32 +57,6 @@ ACCT;
 
 NOACCT;
         }
-
-    if(isset($_POST['login']))
-    {
-        $file = fopen("./user_pass.txt", "r"); 
-        $user = $_POST['user'];
-        $password = $_POST['password'];
-        $match = false;
-        while (!feof($file))
-        {
-            $line = trim(fgets($file));
-            if ($line === "$user:$password")
-            {
-            $match = true;
-            setcookie("success", $value, time() + 86400*1095, "/");
-            break;
-            }   
-        }
-    }
-
-        if($match === false)
-        {
-            echo '<script language="javascript">';
-            echo 'alert("Invalid username or password. Please try again.")';
-            echo '</script>';
-        }
-        header("Location: ./");
 
     print <<<REMAINDER
                 </ul>

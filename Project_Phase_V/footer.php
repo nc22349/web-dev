@@ -14,7 +14,7 @@
                 <div class="col-6 col-md">
                     <ul class="list-unstyled text-small text-center">
                         <li><a href="${cd}Become_A_Photographer">Become a Photographer</a></li>
-                        <li><a href="${cd}About/about.html">About the Developers</a></li>
+                        <li><a href="${cd}About">About the Developers</a></li>
                         <li><a href="${cd}Help">Help</a></li>
                     </ul>
                 </div>
