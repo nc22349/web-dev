@@ -5,7 +5,7 @@
     <?php include "../head-content.html"; ?>
 </head>
 <body>
-    <?php include "../header.html"; ?>
+    <?php include "../navbar.php"; ?>
     <div class="container setmax">
         <div class="py-5 text-center">
             <h2>Become a Photographer</h2>
@@ -47,7 +47,9 @@ else
                     <div class="invalid-feedback">Your Password Must Contain: <table><tr><th>One Capital Letter</th><th>One Special Character</th><th>One Number</th></tr></table></div>
                 </div>
                 <hr class="mb-4">
-                <button class="btn btn-lg burnt-orange" name = "signup" type="submit">Register</button>
+		<div class="text-center">
+                    <button class="btn btn-lg burnt-orange" name="signup" type="submit">Register</button>
+		</div>
             </form>
     </div>
 REGISTER;
@@ -84,6 +86,6 @@ if (isset($_POST["signup"]))
     }
 }
 ?>
-<?php include "../footer.html"; ?>
+<?php include "../footer.php"; ?>
 </body>
 </html>
