@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8">
-		<title> About the Developers </title>
-		<link rel="stylesheet" href="about.css">
+		<title>About the Developers</title>
+		<?php include "../head-content.html" ?>
 	</head>
-
 	<body>
+	    <?php include "../navbar.php" ?>
+		<div class="container setmax-900">
+			<div class="py-5 text-center">
+				<h2>About the Developers</h2>
+			</div>
+			<div class="row">
+				<div class="col-lg-6">
+					<		
 		<h1> About the Developers </h1>
 		<hr>
 		<a href="./../Homepage/home.html"><img src="./../Global_Images/Logo.png" alt="ATXGRADPHOTO"></a>
@@ -29,5 +35,6 @@
 			<p>I am a graduating senior who majored in English and has professional experience in technical writing and Javascript. In my free time, I play piano, listen to music, and hang out with friends.</p>
 			<p>Email: nathan.caldwell@utexas.edu</p>
 		</div>
+	<?php include "../footer.php" ?>
     </body>
 </html>
