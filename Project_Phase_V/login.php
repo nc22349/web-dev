@@ -1,8 +1,7 @@
 <?php
     if(isset($_POST['login']))
     {
-        echo "IT'S SET!!!";
-        /*$file = fopen("./user_pass.txt", "r"); 
+        $file = fopen("user_pass.txt", "r"); 
         $user = $_POST['user'];
         $password = $_POST['password'];
         $match = false;
@@ -12,17 +11,15 @@
             if ($line === "$user:$password")
             {
             $match = true;
-            setcookie("success", $value, time() + 86400*1095, "/");
+            setcookie("success", $_POST['user'], time() + 86400*1095, "/");
+	    header("Location: ./");
             break;
-            }   
-        }*/
-    }
-
-        /*if($match === false)
-        {
-            echo '<script language="javascript">';
-            echo 'alert("Invalid username or password. Please try again.")';
-            echo '</script>';
+            }
         }
-        header("Location: ./");*/
+
+        if($match === false)
+        {
+            echo "That login information is invalid. Please go back and try again.";
+        }
+    }
 ?>

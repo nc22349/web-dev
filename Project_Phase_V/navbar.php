@@ -33,7 +33,9 @@ UNIVERSAL;
     if (isset($_COOKIE["success"])){
         print <<<ACCT
                     <li class="nav-item">
-                        <a class="nav-link text-burnt-orange" href="${cd}Become_A_Photographer/logout.php">Log Out</a>
+                        <form class="form-inline" action="${cd}logout.php" method="post">
+			    <button class="btn btn-outline-dark type="submit">Log Out</button>
+			</form>
                     </li>
 ACCT;
     // If no user logged in, print NOACCT
