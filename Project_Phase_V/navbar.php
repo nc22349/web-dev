@@ -33,7 +33,7 @@ UNIVERSAL;
     if (isset($_SESSION["user"])) {
         print <<<ACCT
                     <li class="nav-item">
-                        <a class="nav-link text-burnt-orange" href="${cd}logout.php">Log Out</a>
+                        <a class="nav-link text-burnt-orange" href="${cd}Become_A_Photographer/logout.php">Log Out</a>
                     </li>
 ACCT;
     // If no user logged in, print NOACCT
@@ -42,7 +42,7 @@ ACCT;
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-burnt-orange" id="signinDropdownToggler" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 100px;">Sign In</a>
                         <div class="dropdown-menu" aria-labelledby="signinDropdownToggler" style="min-width: 200px;">
-                            <form class="px-2 py-2 mr-0">
+                            <form class="px-2 py-2 mr-0" action="${cd}Become_A_Photographer/login.php" method="post">
                                 <input type="text" class="form-control mb-1 w-100" placeholder="Username">
                                 <input type="password" class="form-control mb-1 w-100" placeholder="Password">
                                 <button type="submit" class="btn burnt-orange mx-auto" style="width: 85px; display: block;">Sign In</button>
