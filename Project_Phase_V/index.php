@@ -3,7 +3,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-	<title>ATXGradPhotos Home</title>
+	    <title>ATXGradPhotos Home</title>
         
         <!-- BOOTSTRAP -->
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,16 +11,10 @@
 
         <!-- CUSTOM STYLESHEETS -->
         <link rel="stylesheet" href="global.css">
-        
-        <!-- JQUERY -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        
-        <!-- CUSTOM SCRIPTS -->
-        <script src="hideNavbar.js" defer></script> 
     </head>
     <body>
 	   <!-- Header -->
-        <?php include "header.php"; ?>
+        <?php include "navbar.php"; ?>
 
         <!-- Jumbotron -->
         <div class="jumbotron bg-eee pt-0 mb-0">
@@ -123,6 +117,5 @@
         </div>
         
         <?php include "footer.php"; ?>
-	<?php include "bottomScripts.html"; ?>
     </body>
 </html>
