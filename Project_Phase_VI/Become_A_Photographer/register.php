@@ -16,7 +16,7 @@
         }
         if ($taken === true)
         {
-            echo "Taken";
+            header("Location: index.php");
         }
         else
         {

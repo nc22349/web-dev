@@ -20,8 +20,8 @@
             var username = document.getElementById("username").value;
 
             if ((username == null) || (username == "")) return;
-
-            var url = "register.php";
+		
+	    var url = "check.php";
 
             var params = "username=" + username;
 
@@ -33,7 +33,7 @@
 
             xhr.setRequestHeader("Connection", "close");
 
-            xhr.onreadystatechange=update;
+            xhr.onreadystatechange = update;
 
             xhr.send(params);
         }
@@ -58,7 +58,7 @@
                 <h2>Become a Photographer</h2>
                 <p class="lead">Good with a camera? Looking for clients? Join our community of photographers to take potraits of future UT Grads!</p>
             </div>
-            <form class="needs-validation" id="login" method="post" action="register.php">
+            <form class="needs-validation" id="login" method="POST" action="register.php">
                 <div class="row">
                     <div class="col-md-6 mb-3">
                         <label for="firstName">First name</label>
@@ -73,7 +73,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="username">Email</label>
-                    <input type="text" class="form-control" id="username" name="username" placeholder="you@example.com" onchange="checkServer()">
+                    <input type="text" class="form-control" id="username" name="username" placeholder="you@example.com" onchange="checkServer()" required>
                     <div class="invalid-feedback">Valid email is required.</div>
                 </div>
                 <div class="mb-3">
