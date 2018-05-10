@@ -5,7 +5,7 @@
         <title>Help</title>
         <?php include "../head-content.html"; ?>
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-        <script src="validateForm.js"></script>
+        <script src="validateAndSubmit.js"></script>
     </head>
     <body>
         <?php include "../navbar.php"; ?>
@@ -31,7 +31,7 @@
                 </div>
                 <div class="form-group mb-3">
                     <label for="email">Email</label>
-                    <input type="email" class="form-control" name="email" id="email" placeholder="you@example.com" required>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="you@example.com">
                     <div class="invalid-feedback">Valid email is required.</div>
                 </div>
                 <div class="form-group mb-3">
