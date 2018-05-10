@@ -20,7 +20,7 @@
                     <div class="video-wrapper">
                     <p>Favorite SNL Sketch:</p>
                     <iframe width="350" height="315"
-      				src="https://www.youtube.com/embed/O7VaXlMvAvk?autoplay=1;controls=1">
+      				src="https://www.youtube.com/embed/O7VaXlMvAvk?controls=1">
       				</iframe>
       				</div>
                 </div>
@@ -33,7 +33,7 @@
                     <p>Favorite SNL Sketch:</p>
                     <div class="video-wrapper">
                     <iframe width="350" height="315"
-      				src="https://www.youtube.com/embed/q2sI-T69sjs?autoplay=1;controls=1">
+      				src="https://www.youtube.com/embed/q2sI-T69sjs?controls=1">
       				</iframe>
       				</div>
                 </div>
