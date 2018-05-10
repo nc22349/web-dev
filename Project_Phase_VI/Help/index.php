@@ -4,6 +4,8 @@
     <head>
         <title>Help</title>
         <?php include "../head-content.html"; ?>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="validateForm.js"></script>
     </head>
     <body>
         <?php include "../navbar.php"; ?>
@@ -12,21 +14,6 @@
                 <h2>Contact Us</h2>
                 <p class="lead">Do you need help using the site? Fill out the form below and an ATX Grad Photo representative will get back to you promptly.</p>
             </div>
-            <form id="registrationForm" class="needs-validation">
-                    <div class="form-group">
-                        <label for="username">Username</label>
-                        <input type="text" class="form-control" name="username" id="username" autocomplete="off" required>
-                        <div class="invalid-feedback">That username is taken.</div>
-                    </div>
-                    <div class="form-group">
-                        <label for="password">Password</label>
-                        <input type="password" class="form-control" name="password" id="password" required>
-                    </div>
-                    <div class="text-center">
-                        <button type="submit" class="btn btn-success">Submit</button>
-                        <button type="reset" class="btn btn-secondary">Reset</button>
-                    </div>
-                </form>
             <form id="helpForm" class="needs-validation">
                 <div class="row mb-3">
                     <div class="col-md-6">
@@ -52,7 +39,9 @@
                     <textarea class="textarea" id="comments" placeholder="Your comments/question here..." required></textarea>
                 </div>
                 <hr class="mb-4">
-                <button class="btn btn-lg burnt-orange mx-auto" type="submit">Submit</button>
+                <div class="text-center">
+                    <button class="btn btn-lg burnt-orange" type="submit">Submit</button>
+                </div>
             </form>
         </div>
         <?php include "./../footer.php"; ?>
