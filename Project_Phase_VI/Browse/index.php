@@ -1,12 +1,14 @@
 <html>
 <head>
 <title> Browse Photographers</title>
-<?php include "../head-content.html"; ?>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<?php include "../head-content.html"; ?>
 </head>
 <body>
+<?php include "../navbar.php"; ?>
+<br><br>
 <table class="table">
-	<thead class="burnt-orange">
+	<thead class="thead-dark">
     	<tr>
       	<th scope="col">First Name</th>
       	<th scope="col">Last Name</th>
