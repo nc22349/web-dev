@@ -9,14 +9,14 @@
 	</head>
 	<body>
 	    <?php include "../../navbar.php" ?>
-        <div class="card text-white bg-warning my-5 mx-auto" style="max-width: 18rem;">
+	    <div class="container setmax-900">
+        <div class="card text-white burnt-orange my-5 mx-auto w-100">
             <div class="card-header">Note</div>
             <div class="card-body">
                 <h5 class="card-title">This profile is included as proof of concept.</h5>
                 <p class="card-text">For this release we just did a generic profile page, which is the only one you can view. Our Browse page meets the requirement of interacting with the SQL backend.</p>
             </div>
         </div>
-        <div class="container setmax-900">
             <div class="row">
                 <div class="col-md-6 text-center">
                     <img class="mx-auto img-fluid" src="profile.jpg" alt="profile picture">
@@ -49,18 +49,20 @@
                             <td>4.5</td>
                         </tr>
                     </table>
-                    <a class="text-center lead" href="#">Contact</a>
+		    <div class="w-100 text-center">
+		        <a class="lead mx-auto" href="#">Contact</a>
+		    </div>
                 </div>
             </div>
             <div class="row py-5">
-                <h2 class="text-center">Portfolio</h2>
-                <div id="portfolioCarousel" class="carousel slide" data-ride="carousel">
+		<div class="w-100 text-center"><h2>Portfolio</h2></div>
+                <div id="portfolioCarousel" class="carousel slide mx-auto" data-ride="carousel">
                     <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="d-block w-100" src="Portfolio/graduation_row.jpeg" alt="First slide">
+                        <div class="carousel-item active text-center">
+                            <img class="d-block" style="max-width: 565px;" src="Portfolio/graduation_row.jpeg" alt="First slide">
                         </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="Portfolio/510365.jpg" alt="Second slide">
+                        <div class="carousel-item text-center">
+                            <img class="d-block w-100" style="max-width: 565px;" src="Portfolio/510365.jpg" alt="Second slide">
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#portfolioCarousel" role="button" data-slide="prev">
