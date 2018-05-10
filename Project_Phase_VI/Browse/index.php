@@ -6,9 +6,10 @@
 </head>
 <body>
 <?php include "../navbar.php"; ?>
-<br><br>
-<table class="table">
-	<thead class="thead-dark">
+<div class="container setmax">
+<div class="py-5 text-center">
+<table class="table mb-3">
+	<thead class="burnt-orange">
     	<tr>
       	<th scope="col">First Name</th>
       	<th scope="col">Last Name</th>
@@ -48,6 +49,8 @@
 	mysqli_close($connect);
 ?>
 </table>
+</div>
+</div>
 <?php include "../footer.php"; ?>
 </body>
 </html>
