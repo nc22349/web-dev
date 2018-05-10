@@ -11,7 +11,7 @@
         <?php include "../navbar.php"; ?>
         <div class="container setmax">
             <div class="py-5 text-center">
-                <h2>Contact Us</h2>
+                <h2>Get Help</h2>
                 <p class="lead">Do you need help using the site? Fill out the form below and an ATX Grad Photo representative will get back to you promptly.</p>
             </div>
             <form id="helpForm" class="needs-validation">
