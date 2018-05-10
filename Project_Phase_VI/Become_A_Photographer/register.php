@@ -2,7 +2,7 @@
     if (isset($_POST["signup"]))
     {
         $file = fopen("../user_pass.txt", "r");
-        $user = $_POST['email'];
+        $user = $_POST['username'];
         $taken = false;
         while(!feof($file))
         {
@@ -16,7 +16,7 @@
         }
         if ($taken === true)
         {
-            echo "The email $user is already associated with an account.";
+            echo "Taken";
         }
         else
         {

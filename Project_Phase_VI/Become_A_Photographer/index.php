@@ -3,6 +3,53 @@
     <head>
         <title>Become a Photographer</title>
         <?php include "../head-content.html"; ?>
+        <script src="https://code.jquery.com/jquery-2.2.4.js" type="text/javascript"></script>
+  <script type = "text/javascript">
+        
+        var xhr;
+        if (window.ActiveXObject) {
+            xhr = new ActiveXObject ("Microsoft.XMLHTTP");
+        }
+        else if (window.XMLHttpRequest) {
+            xhr = new XMLHttpRequest ();
+        }
+
+        function checkServer()
+        {
+
+            var username = document.getElementById("username").value;
+
+            if ((username == null) || (username == "")) return;
+
+            var url = "register.php";
+
+            var params = "username=" + username;
+
+            xhr.open("POST", url, true);
+
+            xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+            xhr.setRequestHeader("Content-length", params.length);
+
+            xhr.setRequestHeader("Connection", "close");
+
+            xhr.onreadystatechange=update;
+
+            xhr.send(params);
+        }
+
+        function update() {
+            if ((xhr.readyState == 4) && (xhr.status == 200)) {
+
+                var response = xhr.responseText;
+
+                if (response == "Taken") {
+                    window.alert("Username is already taken. Please try again.");
+                }
+            }
+
+        }
+    </script>
     </head>
     <body>
         <?php include "../navbar.php"; ?>
@@ -25,8 +72,8 @@
                     </div>
                 </div>
                 <div class="mb-3">
-                    <label for="email">Email</label>
-                    <input type="email" class="form-control" name="email" placeholder="you@example.com">
+                    <label for="username">Email</label>
+                    <input type="text" class="form-control" id="username" name="username" placeholder="you@example.com" onchange="checkServer()">
                     <div class="invalid-feedback">Valid email is required.</div>
                 </div>
                 <div class="mb-3">
