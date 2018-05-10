@@ -1,24 +1,23 @@
-<?php
-print<<<TOP
 <html>
 <head>
-<title> View Student Record </title>
+<title> Browse Photographers</title>
 <?php include "../head-content.php"; ?>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
 <table class="table">
-	<thead class="thead-dark">
+	<thead class="burnt-orange">
     	<tr>
       	<th scope="col">First Name</th>
       	<th scope="col">Last Name</th>
       	<th scope="col">Languages</th>
       	<th scope="col">Price Range</th>
+      	<th scope="col">Preferred Form of Payment</th>
       	<th scope="col">Transportation</th>
       	<th scope="col">Rating</th>
     	</tr>
     </thead>
-TOP;
+<?php
 
 	$host = "spring-2018.cs.utexas.edu";
 	$user = "ncald";
@@ -45,11 +44,8 @@ TOP;
 	$result->free();
 
 	mysqli_close($connect);
-
-print<<<BOTTOM
+?>
 </table>
 <?php include "../footer.php"; ?>
 </body>
 </html>
-BOTTOM;
-?>
