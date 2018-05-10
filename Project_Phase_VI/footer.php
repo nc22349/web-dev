@@ -1,6 +1,8 @@
 <?php
     if ($home === true) {
 	   $cd = "";
+    } else if ($profile === true) {
+	   $cd = "../../";
     } else {
 	   $cd = "../";
     }
