@@ -25,10 +25,7 @@
             $file = fopen("../user_pass.txt", "a");
             fwrite($file, "$str\n");
             setcookie("success", $user, time() + 86400*1095, "/");
-            header("Location: ../");
-        }
-
-        extract($_POST);
+            extract($_POST);
         if(isset($_POST['language'])){
             $LANGUAGE = implode(", ", $_POST['language']);
         }
@@ -69,6 +66,11 @@
 
         $result->free();
         msqli_close($connect);
+
+        header("Location: ../");
+        }
+
+        
 
     }
 ?>
