@@ -45,9 +45,9 @@
         $pwd = "ra3pNnEmSl";
         $dbs = "cs329e_ncald";
         $port = "3306";
-	echo"$host,$user,$pwd,$dbs,$port";
+            echo"$host,$user,$pwd,$dbs,$port";
 
-        $connect = mysql_connect ($host, $user, $pwd, $dbs, $port) or die("fuck you!!!");
+        $connect = mysqli_connect($host, $user, $pwd, $dbs, $port);
 	echo"$connect is working";
 
         if (empty($connect)) {
