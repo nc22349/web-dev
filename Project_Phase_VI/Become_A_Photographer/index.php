@@ -49,6 +49,20 @@
             }
 
         }
+
+        function empty()
+        {
+            var a,b,c,d;
+            a = document.getElementById("username").value;
+            b = document.getElementById("password").value;
+            c = document.getElementById("firstName").value;
+            d = document.getElementById("lastName").value;
+            if ((a == "") || (b == "") || (c == "") || (d == ""))
+            { 
+                alert("Please Fill Out All The Fields");
+                return false;
+            }
+        }
     </script>
     </head>
     <body>
@@ -62,12 +76,12 @@
                 <div class="row">
                     <div class="col-md-6 mb-3">
                         <label for="firstName">First name</label>
-                        <input type="text" class="form-control" id="firstName" placeholder="John">
+                        <input type="text" class="form-control" name="firstName" id="firstName" placeholder="John">
                         <div class="invalid-feedback">First name is required.</div>
                     </div>
                     <div class="col-md-6 mb-3">
                         <label for="lastName">Last name</label>
-                        <input type="text" class="form-control" id="lastName" placeholder="Smith">
+                        <input type="text" class="form-control" name="lastName" id="lastName" placeholder="Smith">
                         <div class="invalid-feedback">Last name is required.</div>
                     </div>
                 </div>
@@ -81,9 +95,81 @@
                     <input type="password" class="form-control" name="password" placeholder="***********">
                     <div class="invalid-feedback">Your Password Must Contain: <table><tr><th>One Capital Letter</th><th>One Special Character</th><th>One Number</th></tr></table></div>
                 </div>
+
+                <hr class="mb-3">
+                <h4 class="mb-3">Languages</h4>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" name="languages[]" value="English" id="English">
+                    <label class="custom-control-label" for="English">English</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="Spanish" name="languages[]" value="Spanish">
+                    <label class="custom-control-label" for="Spanish">Spanish</label>
+                </div>
+              <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="Chinese">
+                    <label class="custom-control-label" for="Chinese" name="languages[]" value="Chinese">Chinese</label>
+                </div>
+              <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="Hindi">
+                    <label class="custom-control-label" for="Hindi" name="languages[]" value="Hindi">Hindi</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="Vietnamese" name="languages[]" value="Vietnamese">
+                    <label class="custom-control-label" for="Vietnamese">Vietnamese</label>
+                </div>
+
+                <hr class="mb-3">
+                <h4 class="mb-2">Price Range</h4>
+                 <div class="d-block my-3">
+                    <div class="custom-control custom-radio">
+                        <input id="$" value="$" name="pricerange" type="radio" class="custom-control-input" checked required>
+                        <label class="custom-control-label" for="$">$</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input id="$$" value="$$" name="pricerange" type="radio" class="custom-control-input" required>
+                        <label class="custom-control-label" for="$$">$$</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input id="$$$" value="$$" name="pricerange" type="radio" class="custom-control-input" required>
+                        <label class="custom-control-label" for="$$$">$$$</label>
+                    </div>
+                </div>
+
+                <hr class="mb-3">
+                <h4 class="mb-3">Form of Payment</h4>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" name="payments[]" value="Cash"class="custom-control-input" id="Cash">
+                    <label class="custom-control-label" for="Cash">Cash</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" name="payments[]" value="Credit Card"class="custom-control-input" id="Credit Card">
+                    <label class="custom-control-label" for="Credit Card">Credit Card</label>
+                </div>
+              <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" name="payments[]" value="Venmo" id="Venmo">
+                    <label class="custom-control-label" for="Venmo">Venmo</label>
+                </div>
+              <div class="custom-control custom-checkbox">
+                    <input type="checkbox" name="payments[]" value="Check"class="custom-control-input" id="Check">
+                    <label class="custom-control-label" for="Check">Check</label>
+                </div>
+
+                <hr class="mb-3">
+                <h4 class="mb-2">Can you Provide Transportation for Shoots?</h4>
+                 <div class="d-block my-3">
+                    <div class="custom-control custom-radio">
+                        <input id="Yes" value="1" name="transportation" type="radio" class="custom-control-input" checked required>
+                        <label class="custom-control-label" for="Yes">Yes</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input id="No" value="0" name="transportation" type="radio" class="custom-control-input" required>
+                        <label class="custom-control-label" for="No">No</label>
+                    </div>
+
                 <hr class="mb-4">
                 <div class="text-center">
-                    <button class="btn btn-lg burnt-orange" name="signup" type="submit">Register</button>
+                    <button class="btn btn-lg burnt-orange" name="signup" type="submit" onClick="return empty()">Register</button>
                 </div>
             </form>
         </div>
