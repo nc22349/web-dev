@@ -11,20 +11,20 @@ $pwd = "ra3pNnEmSl"; // Note: PW is clear text!!
 $dbs = "cs329e_ncald";
 $port = "3306";
 
-echo "hey pardner";
 $connect = mysqli_connect ($host, $user, $pwd, $dbs, $port);
-echo "i'm da best!!";
 
 if (empty($connect))
 {
-  echo "fucked";
   die("mysqli_connect failed: " . mysqli_connect_error());
 }
 
 // Check if email in use
-$result = mysqli_query($connect, "select * from credentials where email = '{$_POST['username']}'");
-if ($result[$num_rows] > 0) {
-    header ("Location: ./");
+$username = $_POST['username'];
+echo $username;
+$result = mysqli_query($connect, "select * from credentials where email = '$username'");
+if ($result) {
+    echo "That email is already in use. Please try again.";
+    die();
 }
 
 // Get most recent ID
@@ -46,6 +46,7 @@ if(isset($_POST['payments'])){
 }
 
 $query = mysqli_query($connect, "insert into userinfo values ($id, '$FIRST','$LAST','$LANGUAGE','$PRICERANGE','$PAYMENT','$TRANSPORTATION', 4.5)");
+
 
 // Add row to credentials table
 $USER = $_POST["username"];
