@@ -38,7 +38,7 @@
         $FIRST = $_POST["firstName"];
         $LAST = $_POST["lastName"];
         $PRICERANGE = $_POST["pricerange"];
-        $TRANSPORTATION = $_POST["transportation"]
+        $TRANSPORTATION = $_POST["transportation"];
     
     
         $host = "spring-2018.cs.utexas.edu";
@@ -55,6 +55,17 @@
 
         $table = "userinfo";
         $query = mysqli_query($connect, "INSERT INTO $table VALUES ('0','$FIRST','$LAST','$LANGUAGE','$PRICERANGE','$PAYMENT','$TRANSPORTATION')");
+        if($query){
+        echo '<script language="javascript">';
+        echo 'alert("Displaying New Table")';
+        echo '</script>';
+        }
+        else 
+        {
+        echo '<script language="javascript">';
+        echo 'alert("Insert failed. Please try again.")';
+        echo '</script>';
+        }
 
         $result->free();
         msqli_close($connect);
