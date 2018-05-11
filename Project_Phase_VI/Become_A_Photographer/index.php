@@ -6,7 +6,7 @@
         <script src="https://code.jquery.com/jquery-2.2.4.js" type="text/javascript"></script>
   <script type = "text/javascript">
         
-/*        var xhr;
+        var xhr;
         if (window.ActiveXObject) {
             xhr = new ActiveXObject ("Microsoft.XMLHTTP");
         }
@@ -21,7 +21,7 @@
 
             if ((username == null) || (username == "")) return;
 		
-	    var url = "check.php";
+	        var url = "check.php";
 
             var params = "username=" + username;
 
@@ -44,7 +44,7 @@
                 var response = xhr.responseText;
 
                 if (response == "Taken") {
-                    window.alert("Username is already taken. Please try again.");
+                    window.alert("Email already associated with an account. Please Log In.");
                 }
             }
 
@@ -52,7 +52,7 @@
 
         function empty()
         {
-            /*var a,b,c,d;
+            var a,b,c,d;
             a = document.getElementById("username").value;
             b = document.getElementById("password").value;
             c = document.getElementById("firstName").value;
@@ -61,8 +61,8 @@
             { 
                 alert("Please Fill Out All The Fields");
                 return false;
-            }*/
-        //}
+            }
+        }
     </script>
     </head>
     <body>
