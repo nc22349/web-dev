@@ -2,7 +2,8 @@ $("#helpForm").submit(function() {
     event.preventDefault();
 
     $("#success").remove();
-    
+
+    validate();    
     var regex = /^.+@.+\..+(\..+)*$/; // one or more chars, followed by @, followed by one or more chars, followed by '.', followed by one or more chars, optionally followed by ('.' followed by one or more chars) zero or more times
     
     if (!regex.test($("#email").val())) {

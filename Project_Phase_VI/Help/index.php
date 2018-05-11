@@ -15,12 +15,13 @@
                 <p class="lead">Do you need help using the site? Fill out the form below and an ATX Grad Photo representative will get back to you promptly.</p>
                 <p class="text-danger">Do not submit sensitive information such as passwords or credit card numbers.</p>
             </div>
-            <form id="helpForm" class="needs-validation">
+            <form id="helpForm" class="needs-validation" novalidate>
                 <div class="row mb-3">
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="firstname">First name</label>
-                            <input type="text" class="form-control" name="firstname" id="firstname" required>
+                            <input type="text" class="form-control" name="firstname" id="firstname">
+			    <div class="invalid-feedback">First name is required.</div>
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -37,7 +38,8 @@
                 </div>
                 <div class="form-group mb-3">
                     <label for="comments">Comments</label>
-                    <textarea class="textarea" id="comments" placeholder="Your comments/question here..." required></textarea>
+                    <textarea class="textarea" id="comments" placeholder="Your comments/question here..."></textarea>
+		    <div class="invalid-feedback">Comments are required.</div>
                 </div>
                 <hr class="mb-4">
                 <div class="text-center">
