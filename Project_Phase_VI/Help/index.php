@@ -13,6 +13,7 @@
             <div class="py-5 text-center">
                 <h2>Get Help</h2>
                 <p class="lead">Do you need help using the site? Fill out the form below and an ATX Grad Photo representative will get back to you promptly.</p>
+                <p class="text-danger">Do not submit sensitive information such as passwords or credit card numbers.</p>
             </div>
             <form id="helpForm" class="needs-validation">
                 <div class="row mb-3">
