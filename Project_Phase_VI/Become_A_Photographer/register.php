@@ -20,9 +20,8 @@ if (empty($connect))
 
 // Check if email in use
 $username = $_POST['username'];
-echo $username;
 $result = mysqli_query($connect, "select * from credentials where email = '$username'");
-if ($result) {
+if (mysqli_num_rows($result) > 0) {
     echo "That email is already in use. Please try again.";
     die();
 }

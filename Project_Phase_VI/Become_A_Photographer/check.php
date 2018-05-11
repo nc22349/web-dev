@@ -10,7 +10,7 @@
     $connect = mysqli_connect ($host, $user, $pwd, $dbs, $port);
     $result = mysqli_query($connect, "select * from credentials where email = '{$_POST['username']}'");
     
-    if ($result) {
+    if (mysqli_num_rows($result) > 0) {
     $taken = true;
     }
 

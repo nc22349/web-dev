@@ -49,10 +49,10 @@
                             <td>4.5</td>
                         </tr>
                     </table>
-		    <div class="w-100">
-		        <a href="https://www.facebook.com/davidbowie"><img class="d-inline-block" style="width: 50px;" src="../../Global_Images/facebook.png" alt="Facebook"></a>
-			<div class="col-4"><a href="https://www.instagram.com/davidbowie/"><img style="width: 50px;" src="../../Global_Images/instagram.png" alt="Instagram"></a></div>
-			<div class="col-4"><a href="https://www.twitter.com/DavidBowieReal"><img style="width: 50px;" src="../../Global_Images/twitter.png" alt="Twitter"></a></div>
+		    <div class="w-100 text-center">
+		        <a href="https://www.facebook.com/davidbowie"><img style="width: 50px; display: inline-block;" src="../../Global_Images/facebook.png" alt="Facebook"></a>
+			<a href="https://www.instagram.com/davidbowie/"><img style="width: 50px; display: inline-block;" src="../../Global_Images/instagram.png" alt="Instagram"></a>
+			<a href="https://www.twitter.com/DavidBowieReal"><img style="width: 50px;" src="../../Global_Images/twitter.png" alt="Twitter"></a>
 		    </div>
                 </div>
             </div>

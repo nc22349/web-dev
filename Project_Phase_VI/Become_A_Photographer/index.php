@@ -48,20 +48,6 @@
             }
 
         }
-
-        function empty()
-        {
-            var a,b,c,d;
-            a = document.getElementById("username").value;
-            b = document.getElementById("password").value;
-            c = document.getElementById("firstName").value;
-            d = document.getElementById("lastName").value;
-            if ((a == "") || (b == "") || (c == "") || (d == ""))
-            { 
-                alert("Please Fill Out All The Fields");
-                return false;
-            }
-        }
     </script>
     </head>
     <body>
@@ -75,34 +61,34 @@
                 <div class="row">
                     <div class="col-md-6 mb-3">
                         <label for="firstName">First name</label>
-                        <input type="text" class="form-control" name="firstName" id="firstName" placeholder="John" value="Little Bobby">
+                        <input type="text" class="form-control" name="firstName" id="firstName" placeholder="John" required>
                         <div class="invalid-feedback">First name is required.</div>
                     </div>
                     <div class="col-md-6 mb-3">
                         <label for="lastName">Last name</label>
-                        <input type="text" class="form-control" name="lastName" id="lastName" placeholder="Smith" value="Mr. Little B to you">
+                        <input type="text" class="form-control" name="lastName" id="lastName" placeholder="Smith" required>
                         <div class="invalid-feedback">Last name is required.</div>
                     </div>
                 </div>
                 <div class="mb-3">
                     <label for="username">Email</label>
-                    <input type="text" class="form-control" id="username" name="username" placeholder="you@example.com" onfocusout="checkServer()" required value="g@icecold.edu">
+                    <input type="text" class="form-control" id="username" name="username" placeholder="you@example.com" onfocusout="checkServer()" required>
                     <div class="invalid-feedback">Valid email is required.</div>
                 </div>
                 <div class="mb-3">
                     <label for="password">Password</label>
-                    <input type="password" class="form-control" id="password" name="password" placeholder="***********" value="sdflkj">
+                    <input type="password" class="form-control" id="password" name="password" placeholder="***********" required>
                     <div class="invalid-feedback">Your Password Must Contain: <table><tr><th>One Capital Letter</th><th>One Special Character</th><th>One Number</th></tr></table></div>
                 </div>
 
                 <hr class="mb-3">
                 <h4 class="mb-3">Languages</h4>
                 <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" name="languages[]" value="English" id="English" checked>
+                    <input type="checkbox" class="custom-control-input" name="languages[]" value="English" id="English">
                     <label class="custom-control-label" for="English">English</label>
                 </div>
                 <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="Spanish" name="languages[]" value="Spanish" checked>
+                    <input type="checkbox" class="custom-control-input" id="Spanish" name="languages[]" value="Spanish">
                     <label class="custom-control-label" for="Spanish">Spanish</label>
                 </div>
               <div class="custom-control custom-checkbox">
@@ -168,7 +154,7 @@
 
                 <hr class="mb-4">
                 <div class="text-center">
-                    <button class="btn btn-lg burnt-orange" name="signup" type="submit" onClick="return empty()">Register</button>
+                    <button class="btn btn-lg burnt-orange" name="signup" type="submit">Register</button>
                 </div>
             </form>
         </div>
