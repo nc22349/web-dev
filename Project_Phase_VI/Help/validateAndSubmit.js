@@ -1,16 +1,11 @@
 $("#helpForm").submit(function() {
     event.preventDefault();
 
-    $("#success").remove();
-    
-    var regex = /^.+@.+\..+(\..+)*$/; // one or more chars, followed by @, followed by one or more chars, followed by '.', followed by one or more chars, optionally followed by ('.' followed by one or more chars) zero or more times
-    
-    if (!regex.test($("#email").val())) {
-        $("#email").addClass("is-invalid");
+    clearForm();
+
+    if (! validate()) {
         return;
     }
-    
-    $("#email").removeClass("is-invalid");
 
     var xhttp = new XMLHttpRequest();
 
@@ -30,3 +25,35 @@ $("#helpForm").submit(function() {
         "&comments=" + $("#comments").val()
     );
 });
+
+function clearForm() {
+    $("#success").remove();
+    $("#firstname").removeClass("is-invalid");
+    $("#email").removeClass("is-invalid");
+    $("#comments").removeClass("is-invalid");
+}
+
+function validate() {
+    var valid = true;
+    
+    if (! $("#firstname").val().length) {
+        console.log("No first name entered");
+        $("#firstname").addClass("is-invalid");
+        valid = false;
+    }
+    
+    var regex = /^.+@.+\..+(\..+)*$/; // one or more chars, followed by @, followed by one or more chars, followed by '.', followed by one or more chars, optionally followed by ('.' followed by one or more chars) zero or more times
+    if (! regex.test($("#email").val())) {
+        console.log("Invalid email");
+        $("#email").addClass("is-invalid");
+        valid = false;
+    }
+    
+    if (! $("#comments").val().length) {
+        console.log("No comments");
+        $("#comments").addClass("is-invalid");
+        valid = false;
+    }
+    
+    return valid;
+}
