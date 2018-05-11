@@ -4,7 +4,8 @@
     <head>
         <title>Feedback</title>
         <?php include "../head-content.html"; ?>
-        <script src="validateAndSubmit.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="validateAndSubmit.js" defer></script>
     </head>
     <body>
         <?php include "../navbar.php"; ?>
@@ -24,7 +25,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="feedback">Feedback</label>
-                    <textarea class="textarea" id="feedback" placeholder="Your feedback here..." required></textarea>
+                    <textarea class="textarea" id="comments" placeholder="Your feedback here..." required></textarea>
                 </div>
                 <hr class="mb-4">
                 <div class="text-center">
