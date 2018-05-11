@@ -1,76 +1,62 @@
 <?php
-        $file = fopen("../user_pass.txt", "r");
-        $user = $_POST['username'];
-        $taken = false;
-        while(!feof($file))
-        {
-            $line = trim(fgets($file));
-            $array = explode(':',$line);
-            if ($array[0] === "$user")
-            {
-                $taken = true;
-                break;
-            }
-        }
-        if ($taken === true)
-        {
-            header("Location: ./");
-        }
-        else
-        {
-	echo"its going into the else statement";
-            $password = $_POST['password'];
-            $str = "$user:$password";
-            $file = fopen("../user_pass.txt", "a");
-           // fwrite($file, "$str\n");
-           // setcookie("success", $user, time() + 86400*1095, "/");
-		echo"cookie has been set";
-        if(isset($_POST['languages'])){
-		echo"language is set";
-            $LANGUAGE = implode(", ", $_POST['languages']);
-		print_r($LANGUAGE);
-        }
-        if(isset($_POST['payments'])){
-            $PAYMENT = implode(", ", $_POST['payments']);
-		echo"$PAYMENT WORKS FUCK YEAH";
-        }
-        $FIRST = $_POST["firstName"];
-        $LAST = $_POST["lastName"];
-        $PRICERANGE = $_POST["pricerange"];
-        $TRANSPORTATION = $_POST["transportation"];
-    	echo"$FIRST,$LAST,$PRICERANGE,$TRANSPORTATION";
-    
-        $host = "spring-2018.cs.utexas.edu";
-        $user = "ncald";
-        $pwd = "ra3pNnEmSl";
-        $dbs = "cs329e_ncald";
-        $port = "3306";
-            echo"$host,$user,$pwd,$dbs,$port";
 
-        $connect = mysqli_connect($host, $user, $pwd, $dbs, $port);
-	echo"$connect is working";
+if (isset($_COOKIE["success"])) {
+    header("Location: ..");
+    die();
+}
 
-        if (empty($connect)) {
-        die("mysqli_connect failed: " . mysqli_connect_error());
-        }
+$host = "spring-2018.cs.utexas.edu";
+$user = "ncald";
+$pwd = "ra3pNnEmSl"; // Note: PW is clear text!!
+$dbs = "cs329e_ncald";
+$port = "3306";
 
-        $table = "userinfo";
-        $query = mysqli_query($connect, "INSERT INTO $table VALUES ('0','$FIRST','$LAST','$LANGUAGE','$PRICERANGE','$PAYMENT','$TRANSPORTATION')");
-        if($query){
-        echo '<script language="javascript">';
-        echo 'alert("Displaying New Table")';
-        echo '</script>';
-        }
-        else 
-        {
-        echo"it failed";
-        }
+echo "hey pardner";
+$connect = mysqli_connect ($host, $user, $pwd, $dbs, $port);
+echo "i'm da best!!";
 
-        $result->free();
-        msqli_close($connect);
+if (empty($connect))
+{
+  echo "fucked";
+  die("mysqli_connect failed: " . mysqli_connect_error());
+}
 
-        header("Location: ../");
-        }
+// Check if email in use
+$result = mysqli_query($connect, "select * from credentials where email = '{$_POST['username']}'");
+if ($result[$num_rows] > 0) {
+    header ("Location: ./");
+}
 
-        
+// Get most recent ID
+$result = mysqli_query($connect, "select max(id) from userinfo");
+$id = $result->fetch_row()[0] + 1;
+$result->free();
+
+// Add row to userinfo table
+$FIRST = $_POST["firstName"];
+$LAST = $_POST["lastName"];
+$PRICERANGE = $_POST["pricerange"];
+$TRANSPORTATION = $_POST["transportation"];
+
+if(isset($_POST['languages'])){
+	$LANGUAGE = implode(", ", $_POST['languages']);
+}
+if(isset($_POST['payments'])){
+	$PAYMENT = implode(", ", $_POST['payments']);
+}
+
+$query = mysqli_query($connect, "insert into userinfo values ($id, '$FIRST','$LAST','$LANGUAGE','$PRICERANGE','$PAYMENT','$TRANSPORTATION', 4.5)");
+
+// Add row to credentials table
+$USER = $_POST["username"];
+$PASS = $_POST["password"];
+
+$query1 = mysqli_query($connect, "insert into credentials values ($id, '$USER', '$PASS')");
+mysqli_close($connect);
+
+// Set that cookie
+setcookie("success", $USER, time() + 86400*1095, "/");
+
+header("Location: ..");
+die();
 ?>

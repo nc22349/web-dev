@@ -23,6 +23,7 @@
                     <li class="nav-item">
                         <form class="form-inline my-2 my-md-0" action="${cd}Profile/generic">
                             <input class="form-control focus-orange" type="text" placeholder="Search Photographers">
+			    <input type="submit" value="Search">
                         </form>
                     </li>
                 </ul>

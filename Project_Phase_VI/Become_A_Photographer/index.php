@@ -6,7 +6,7 @@
         <script src="https://code.jquery.com/jquery-2.2.4.js" type="text/javascript"></script>
   <script type = "text/javascript">
         
-        var xhr;
+/*        var xhr;
         if (window.ActiveXObject) {
             xhr = new ActiveXObject ("Microsoft.XMLHTTP");
         }
@@ -52,7 +52,7 @@
 
         function empty()
         {
-            var a,b,c,d;
+            /*var a,b,c,d;
             a = document.getElementById("username").value;
             b = document.getElementById("password").value;
             c = document.getElementById("firstName").value;
@@ -61,8 +61,8 @@
             { 
                 alert("Please Fill Out All The Fields");
                 return false;
-            }
-        }
+            }*/
+        //}
     </script>
     </head>
     <body>
@@ -87,12 +87,12 @@
                 </div>
                 <div class="mb-3">
                     <label for="username">Email</label>
-                    <input type="text" class="form-control" id="username" name="username" placeholder="you@example.com" onchange="checkServer()" required>
+                    <input type="text" class="form-control" id="username" name="username" placeholder="you@example.com" onchange="checkServer()" required value="g@icecold.edu">
                     <div class="invalid-feedback">Valid email is required.</div>
                 </div>
                 <div class="mb-3">
                     <label for="password">Password</label>
-                    <input type="password" class="form-control" name="password" placeholder="***********">
+                    <input type="password" class="form-control" id="password" name="password" placeholder="***********" value="sdflkj">
                     <div class="invalid-feedback">Your Password Must Contain: <table><tr><th>One Capital Letter</th><th>One Special Character</th><th>One Number</th></tr></table></div>
                 </div>
 
