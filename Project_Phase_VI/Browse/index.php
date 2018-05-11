@@ -11,8 +11,7 @@
 <table class="table mb-3">
 	<thead class="burnt-orange">
     	<tr>
-      	<th scope="col">First Name</th>
-      	<th scope="col">Last Name</th>
+      	<th scope="col">Name</th>
       	<th scope="col">Languages</th>
       	<th scope="col">Price Range</th>
       	<th scope="col">Preferred Form of Payment</th>
@@ -37,9 +36,11 @@
 	$table = "userinfo";
 	$result = mysqli_query($connect, "SELECT firstname, lastname, languages, pricerange, payment, transportation,stars from $table order by firstname;");
 	while ($row = $result->fetch_row()) {
+		$name = $row[0] . " " . $row[1];
 		print "<tr>";
-		for ($i = 0; $i < count($row); $i++) {
-			print "<td>$row[$i]</td>";
+		print "<td><a href='../Profile/generic'>$name</a></td>";
+		for ($i = 2; $i < count($row); $i++) {
+			print "<td>{$row[$i]}</td>";
 		}
 		print "</tr>";
 	}

@@ -21,7 +21,7 @@
                         <a class="nav-link text-burnt-orange" href="${cd}Browse">Browse</a>
                     </li>
                     <li class="nav-item">
-                        <form class="form-inline my-2 my-md-0">
+                        <form class="form-inline my-2 my-md-0" action="${cd}Profile/generic">
                             <input class="form-control focus-orange" type="text" placeholder="Search Photographers">
                         </form>
                     </li>
