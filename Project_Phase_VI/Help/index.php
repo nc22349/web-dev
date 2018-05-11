@@ -21,7 +21,7 @@
                         <div class="form-group">
                             <label for="firstname">First name</label>
                             <input type="text" class="form-control" name="firstname" id="firstname">
-			    <div class="invalid-feedback">First name is required.</div>
+                            <div class="invalid-feedback">First name is required.</div>
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -39,7 +39,7 @@
                 <div class="form-group mb-3">
                     <label for="comments">Comments</label>
                     <textarea class="textarea" id="comments" placeholder="Your comments/question here..."></textarea>
-		    <div class="invalid-feedback">Comments are required.</div>
+                    <div class="invalid-feedback">Comments are required.</div>
                 </div>
                 <hr class="mb-4">
                 <div class="text-center">
