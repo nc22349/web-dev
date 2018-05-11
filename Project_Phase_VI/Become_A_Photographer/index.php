@@ -76,12 +76,12 @@
                 <div class="row">
                     <div class="col-md-6 mb-3">
                         <label for="firstName">First name</label>
-                        <input type="text" class="form-control" name="firstName" id="firstName" placeholder="John">
+                        <input type="text" class="form-control" name="firstName" id="firstName" placeholder="John" value="Little Bobby">
                         <div class="invalid-feedback">First name is required.</div>
                     </div>
                     <div class="col-md-6 mb-3">
                         <label for="lastName">Last name</label>
-                        <input type="text" class="form-control" name="lastName" id="lastName" placeholder="Smith">
+                        <input type="text" class="form-control" name="lastName" id="lastName" placeholder="Smith" value="Mr. Little B to you">
                         <div class="invalid-feedback">Last name is required.</div>
                     </div>
                 </div>
@@ -99,11 +99,11 @@
                 <hr class="mb-3">
                 <h4 class="mb-3">Languages</h4>
                 <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" name="languages[]" value="English" id="English">
+                    <input type="checkbox" class="custom-control-input" name="languages[]" value="English" id="English" checked>
                     <label class="custom-control-label" for="English">English</label>
                 </div>
                 <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="Spanish" name="languages[]" value="Spanish">
+                    <input type="checkbox" class="custom-control-input" id="Spanish" name="languages[]" value="Spanish" checked>
                     <label class="custom-control-label" for="Spanish">Spanish</label>
                 </div>
               <div class="custom-control custom-checkbox">
