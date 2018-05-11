@@ -6,11 +6,12 @@ $("#helpForm").submit(function() {
     if (! validate()) {
         return;
     }
-    
+
     var xhttp = new XMLHttpRequest();
 
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
+	    console.log(this.responseText);
             $("#helpForm").trigger("reset");
             $("#helpForm").after('<p id="success" class="text-success">Your help request has been received. Thank you!</p>');
         }

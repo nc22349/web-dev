@@ -5,7 +5,7 @@
         <title>Help</title>
         <?php include "../head-content.html"; ?>
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-        <script src="validateAndSubmit.js"></script>
+        <script src="validateAndSubmit.js" defer></script>
     </head>
     <body>
         <?php include "../navbar.php"; ?>
