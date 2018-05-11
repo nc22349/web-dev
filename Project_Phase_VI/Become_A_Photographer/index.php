@@ -40,7 +40,6 @@
 
         function update() {
             if ((xhr.readyState == 4) && (xhr.status == 200)) {
-
                 var response = xhr.responseText;
 
                 if (response == "Taken") {
@@ -87,7 +86,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="username">Email</label>
-                    <input type="text" class="form-control" id="username" name="username" placeholder="you@example.com" onchange="checkServer()" required value="g@icecold.edu">
+                    <input type="text" class="form-control" id="username" name="username" placeholder="you@example.com" onfocusout="checkServer()" required value="g@icecold.edu">
                     <div class="invalid-feedback">Valid email is required.</div>
                 </div>
                 <div class="mb-3">

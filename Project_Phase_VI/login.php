@@ -1,4 +1,5 @@
 <?php
+
 // Preliminary connection to database
 $host = "spring-2018.cs.utexas.edu";
 $user = "ncald";
@@ -14,15 +15,16 @@ if (empty($connect))
 }
 
 // Check if username/password combo exists
-$u = $_POST["username"];
+extract($_POST);
+$u = $_POST["user"];
 $p = $_POST["password"];
 
-$result = mysqli_query($connect, "select * from credentials where email = '$u' and password = '$p'");
-if (! $result[$num_rows]) {
-    echo "That login information is invalid. Please try again.";
-}
+$result = mysqli_query($connect, "select * from credentials where email='$u' and password='$p'");
 
-// Set logged-in status
-setcookie("success", $_POST['user'], time() + 86400*1095, "/");
-header("Location: ./");
+if (mysqli_num_rows($result) == 0) {
+    echo "That login information is invalid. Please try again.";
+} else {
+    setcookie("success", $u, time() + 86400*1095, "/");
+    header("Location: ./");
+}
 ?>
