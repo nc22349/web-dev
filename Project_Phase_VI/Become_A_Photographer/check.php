@@ -1,25 +1,22 @@
 <?php
-    $file = fopen("../user_pass.txt","r");
-    $user = $_POST['username'];
+
+    $host = "spring-2018.cs.utexas.edu";
+    $user = "ncald";
+    $pwd = "ra3pNnEmSl"; // Note: PW is clear text!!
+    $dbs = "cs329e_ncald";
+    $port = "3306";
+    
     $taken = false;
-    while (!feof($file))
-    {
-        $line = trim(fgets($file));
-        $arrfields = explode(':', $line);
-        if ($arrfields[0] === "$user")
-        {
-            $taken = true;
-            break;
-        }
+    $connect = mysqli_connect ($host, $user, $pwd, $dbs, $port);
+    $result = mysqli_query($connect, "select * from credentials where email = '{$_POST['username']}'");
+    
+    if ($result[$num_rows] > 0) {
+    $taken = true;
+    break;
     }
-    fclose($file);
+
     if ($taken === true)
     {
         echo "Taken";
-    }
-    else{
-        $_SESSION["avaliable"] = true;
-        echo "Avaliable";
-        die;
     }
 ?>
