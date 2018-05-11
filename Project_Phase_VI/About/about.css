@@ -19,6 +19,13 @@ hr{
 	border-color: #cc5500;
 }
 
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+
 #Zee_info {
 	max-width: 350px;
 	text-align: left;
