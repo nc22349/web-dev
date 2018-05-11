@@ -24,7 +24,7 @@
                     <div style="position: absolute; top: 50%; transform: translateY(-50%);">
                         <h1>Discover photographers in the Austin area.</h1>
                         <p class="lead">Graduating and need someone to take your picture? We've got you covered.</p>
-                        <button class="btn burnt-orange" type="button" href="no_page.html">Browse Photographers</button>
+                        <form action="Browse"><input type="submit" class="btn burnt-orange" value="Browse Photographers"></form>
                     </div>
                 </div>
                 <div class="col-md-6 text-center">

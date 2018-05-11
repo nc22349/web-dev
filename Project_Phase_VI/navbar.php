@@ -18,7 +18,7 @@
             <div class="collapse navbar-collapse pl-5" id="navcollapse">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item pr-3">
-                        <a class="nav-link text-burnt-orange" href="${cd}no_page.html">Browse</a>
+                        <a class="nav-link text-burnt-orange" href="${cd}Browse">Browse</a>
                     </li>
                     <li class="nav-item">
                         <form class="form-inline my-2 my-md-0">

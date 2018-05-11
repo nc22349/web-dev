@@ -22,7 +22,6 @@
                 </div>
                 <div class="col-6 col-md">
                     <ul class="list-unstyled text-small text-center">
-                        <li><a href="${cd}no_page.html">FAQ</a></li>
                         <li><a href="${cd}Site_Feedback">Site Feedback</a></li>
                     </ul>
                 </div>
